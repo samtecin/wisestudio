@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseStudio – Manage Classes, Events, Sessions & Payments Effortlessly</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/wisestudio-logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/wisestudio-logo.png" alt="WiseStudio" class="me-2">WiseStudio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section d-flex align-items-center position-relative">
+        <!-- Carousel -->
+        <div id="heroCarousel" class="carousel slide carousel-fade position-absolute w-100 h-100" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="assets/images/wisestudio-1.png" class="d-block w-100 h-100" style="object-fit: fill;" alt="WiseStudio Platform">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="assets/images/wisestudio-2.png" class="d-block w-100 h-100" style="object-fit: fill;" alt="WiseStudio Features">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="assets/images/wisestudio-3.png" class="d-block w-100 h-100" style="object-fit: fill;" alt="WiseStudio Dashboard">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="assets/images/wisestudio-4.png" class="d-block w-100 h-100" style="object-fit: fill;" alt="WiseStudio Mobile">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="assets/images/wisestudio-5.png" class="d-block w-100 h-100" style="object-fit: fill;" alt="WiseStudio Analytics">
+                </div>
+            </div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="container position-relative" style="z-index: 3;">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center text-white">
+                    <h2 class="hero-subtitle mb-4">One Platform. Every Sector. Instant Integration.</h2>
+                    <p class="lead mb-4">A Complete Booking & Payment Platform for All Service Professionals Serving Global Clients. <strong>Integrate into your website in just 15 minutes.</strong></p>
+                    
+                    <div class="d-flex flex-wrap gap-2 justify-content-center text-center mb-4">
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">🩺 Healthcare</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">🏫 Education</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">💪 Fitness & Beauty</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">⚖️ Professional</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">🎉 Events</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Who This Is For Section -->
+<section class="py-5"
+    style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+    <div class="container py-4">
+        <h2 class="text-center section-title mb-4">Trusted Across All Industries</h2>
+        <p class="text-center mb-4 lead">One powerful platform serving diverse professionals worldwide</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="d-flex flex-wrap gap-3 justify-content-center my-4">
+                    <!-- Healthcare -->
+                    <a href="categories/doctors.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#2196F3; color:#fff;">🩺 Doctors & Clinics</a>
+                    <a href="alternative-health.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#4CAF50; color:#fff;">🌿 Alternative Health</a>
+                    <a href="categories/therapy-coaching.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#6610F2; color:#fff;">🛋️ Therapy & Coaching</a>
+                    <a href="categories/wellness-coaches.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#b108b6; color:#fff;">🧘 Wellness Coaches</a>
+                    
+                    <!-- Fitness & Beauty -->
+                    <a href="fitness-trainers.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#FF6584; color:#fff;">💪 Fitness Trainers</a>
+                    <a href="categories/beauty-spa.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#20C997; color:#fff;">💇 Beauty & Spa</a>
+                    
+                    <!-- Education -->
+                    <a href="schools.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#8BC34A; color:#fff;">🏫 Schools</a>
+                    <a href="categories/colleges.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#3F51B5; color:#fff;">🏛️ Colleges</a>
+                    <a href="tuitions.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#00BCD4; color:#fff;">📚 Tuitions</a>
+                    <a href="categories/creative-arts.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#FFD600; color:#333;">🎨 Creative Arts</a>
+                    
+                    <!-- Professional -->
+                    <a href="categories/advocates.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#607D8B; color:#fff;">⚖️ Advocates</a>
+                    
+                    <!-- Events -->
+                    <a href="categories/events.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#F44336; color:#fff;">🎉 Events & Workshops</a>
+                </div>
+                <p class="lead text-center mb-0">
+                    Whether you're a healthcare provider, educator, fitness professional, or service expert – 
+                    <strong>integrate WiseStudio into your website in 30 minutes</strong> and start accepting bookings instantly.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- How It Works / Platform Capabilities Section -->
+<section id="how-it-works" class="py-5"
+    style="background: linear-gradient(135deg, #f3e8ff 0%, #f8fafb 100%);">
+    <div class="container py-4">
+        <h2 class="text-center section-title mb-4">Run Your Classes and Events – Online or Offline – All in One Place</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item bg-transparent"><i class="fas fa-video text-primary me-2"></i> Conduct online and offline classes, events, training, and counselling sessions</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-calendar-alt text-primary me-2"></i> Schedule sessions and share links with students</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-rupee-sign text-primary me-2"></i> Collect payments internationally using UPI and other payment options</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-users text-primary me-2"></i> Track student details, attendance, and performance</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-user-plus text-primary me-2"></i> Add unlimited students and teachers</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-chart-bar text-primary me-2"></i> View helpful analytics on your dashboard</li>
+                </ul>
+                <p class="lead text-center">
+                    Everything you need to teach, manage, and grow your educational work – all from one simple tool.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Benefits Section -->
+<section class="py-5"
+    style="background: linear-gradient(135deg, #f8fafb 0%, #ffe3e3 100%);">
+  <div class="container py-4">
+    <h2 class="text-center section-title mb-4">Why Choose WiseStudio?</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row g-4">
+
+          <!-- Host Classes -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-primary" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#b108b6;"><i class="fas fa-chalkboard-teacher"></i></div>
+              <h5 class="fw-bold mb-2">Host Classes & Events</h5>
+              <p class="mb-0 text-muted">Run online or in-person sessions effortlessly.</p>
+            </div>
+          </div>
+
+          <!-- Easy Scheduling -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-secondary" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#FF6584;"><i class="fas fa-calendar-check"></i></div>
+              <h5 class="fw-bold mb-2">Instant Scheduling</h5>
+              <p class="mb-0 text-muted">Clients book directly. Avoid back-and-forth.</p>
+            </div>
+          </div>
+
+          <!-- Payments -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-teal" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#20C997;"><i class="fas fa-rupee-sign"></i></div>
+              <h5 class="fw-bold mb-2">Global UPI Payments</h5>
+              <p class="mb-0 text-muted">Accept payments internationally via UPI & more.</p>
+            </div>
+          </div>
+
+          <!-- Dashboard -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-indigo" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#6610F2;"><i class="fas fa-tachometer-alt"></i></div>
+              <h5 class="fw-bold mb-2">All-in-One Dashboard</h5>
+              <p class="mb-0 text-muted">Track attendance, payments, records & growth.</p>
+            </div>
+          </div>
+
+          <!-- Affordable & Premium -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-danger" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#e91e63;"><i class="fas fa-gem"></i></div>
+              <h5 class="fw-bold mb-2">Premium at Affordable Price</h5>
+              <p class="mb-0 text-muted">All premium features. No hidden fees. No limits.</p>
+            </div>
+          </div>
+
+          <!-- Fast Setup -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-info" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#00BCD4;"><i class="fas fa-rocket"></i></div>
+              <h5 class="fw-bold mb-2">Go Live in 15 Minutes</h5>
+              <p class="mb-0 text-muted">Just plug it into your site and start immediately.</p>
+            </div>
+          </div>
+
+          <!-- Website Included -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-warning" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#795548;"><i class="fas fa-globe"></i></div>
+              <h5 class="fw-bold mb-2">Website Included</h5>
+              <p class="mb-0 text-muted">No website? No problem. We’ll build a static site for you.</p>
+            </div>
+          </div>
+
+          <!-- Regional Language Support -->
+          <div class="col-md-6 col-lg-3">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-success" style="transition: box-shadow 0.2s;">
+              <div class="mb-3" style="font-size:2.5rem;color:#4CAF50;"><i class="fas fa-language"></i></div>
+              <h5 class="fw-bold mb-2">Regional Language Support</h5>
+              <p class="mb-0 text-muted">Get customer support in your local language.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+     
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5"
+    style="background: linear-gradient(135deg, #f3e8ff 0%, #ffe3e3 100%);">
+        <div class="container py-5">
+            <h2 class="text-center section-title">What Our Community Says</h2>
+            <p class="text-center mb-5">Hear from wellness professionals who transformed their practice</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya K." class="testimonial-img me-4">
+                            <div>
+                                <h5 class="mb-1">Priya K.</h5>
+                                <p class="text-muted mb-0">Yoga Instructor</p>
+                            </div>
+                        </div>
+                        <p>"Wise Wellness Studio has helped me triple my client base in just 6 months. The UPI payment integration is seamless for my Indian students, while international payments work perfectly too."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rahul S." class="testimonial-img me-4">
+                            <div>
+                                <h5 class="mb-1">Rahul S.</h5>
+                                <p class="text-muted mb-0">Fitness Coach</p>
+                            </div>
+                        </div>
+                        <p>"The scheduling features saved me hours each week. My clients love being able to book and reschedule themselves, and I love not having to manage payments manually anymore."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ananya M." class="testimonial-img me-4">
+                            <div>
+                                <h5 class="mb-1">Ananya M.</h5>
+                                <p class="text-muted mb-0">Meditation Guide</p>
+                            </div>
+                        </div>
+                        <p>"From Mumbai to Melbourne, I now have students worldwide. The platform handles all the technical details so I can focus on teaching. The video quality is excellent even with slow connections."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Pricing Comparison Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Compare Our Pricing with Top Fitness SaaS Platforms</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle text-center">
+          <thead class="table-primary">
+            <tr>
+              <th>Platform</th>
+              <th>Plan Name</th>
+              <th>Price (INR / month)</th>
+              <th>Custom Branding</th>
+              <th>Booking & Payments</th>
+              <th>Mobile App</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>WiseStudio</strong></td>
+              <td>Pro Plan</td>
+              <td><span class="badge bg-success">₹2,499</span></td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Fitune</td>
+              <td>Pro Plan</td>
+              <td>₹4,100</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Gymdesk</td>
+              <td>Pro Plan</td>
+              <td>₹6,250</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Glofox</td>
+              <td>Pro Tier</td>
+              <td>₹15,800</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Bookee</td>
+              <td>Growth</td>
+              <td>₹24,900</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>PushPress</td>
+              <td>Pro Plan</td>
+              <td>₹13,200</td>
+              <td>✅</td>
+              <td>✅</td>
+              <td>✅</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">WiseStudio</h2>
+          <p class="lead">A Glimpse Into Your Studio’s Digital Future."</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Full Width Snapshots Carousel -->
+          <div class="col-lg-10">
+            <div id="snapshotsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#snapshotsCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              </div>
+              
+              <div class="carousel-inner rounded-4 shadow">
+                <div class="carousel-item active">
+                  <img src="assets/images/snapshots/2938d-dashboard.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: fill;" alt="Dashboard Overview">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Dashboard Overview</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/ab68d-calendar.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: fill;" alt="Calendar Management">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Calendar Management</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/9eb63-client-management.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: cover;" alt="Client Management">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Client Management</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/e87d7-image-sessions-final.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: contain;" alt="Session Management">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Session Management</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/08046-membership-1.png" class="d-block w-100 rounded-4" style="height: 500px; object-fit: fill;" alt="Membership Plans">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Membership Plans</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/9a085-wallet.png" class="d-block w-100 rounded-4" style="height: 500px; object-fit: contain;" alt="Payment Wallet">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Payment Wallet</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/2b534-image-waitlist-1.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: contain;" alt="Waitlist Management">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Waitlist Management</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/e17d1-image-reports-1.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: fill;" alt="Analytics Reports">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Analytics Reports</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/f595b-teachers.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: fill;" alt="Teacher Management">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Teacher Management</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/images/snapshots/eef42-image-yoga-cenrtes-final.webp" class="d-block w-100 rounded-4" style="height: 500px; object-fit: fill;" alt="Studio Centers">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold">Studio Centers</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <button class="carousel-control-prev" type="button" data-bs-target="#snapshotsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#snapshotsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Contact & Pricing Section -->
+<section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Get Started with WiseStudio</h2>
+      <p class="text-muted">Choose your plan and get in touch with us</p>
+    </div>
+    
+    <div class="row align-items-start">
+      <!-- Left Column - Pricing Card -->
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <div class="card shadow border-0 h-100">
+          <div class="card-header bg-primary text-white text-center">
+            <h3 class="mb-0">Elite Plan</h3>
+            <h4 class="fw-bold mt-2">₹2,499<span class="small"> / month</span></h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Class scheduling & booking</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Video integration (Zoom/Meet)</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Payment processing</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Multi-instructor support</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Custom branding</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Analytics & reporting</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Mobile app access</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Email notifications</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>12+ business sectors</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Unlimited users</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>API access</li>
+              <li><i class="bi bi-check-circle text-success me-2"></i>24/7 support</li>
+            </ul>
+            <div class="d-grid">
+              <a href="#payment" class="btn btn-primary btn-lg">Subscribe Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Column - Contact Form -->
+      <div class="col-lg-7">
+        <div class="contact-form-section">
+          <h2 class="contact-form-title">Contact Us</h2>
+          <form class="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdQjzLlKb_How0n25NHSRzcWARTTyjS21mBFtNkO9q3PFcsXQ/formResponse" method="POST" target="_blank" rel="noopener noreferrer">
+            
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" name="entry.118017157" id="name" required placeholder="Your Name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="entry.2028001218" id="email" required placeholder="you@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="mobile">Mobile</label>
+              <input type="tel" name="entry.145389930" id="mobile" required placeholder="Your Mobile Number" pattern="[0-9]{10,15}" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="entry.49737785" id="message" rows="3" required placeholder="How can we help you?"></textarea>
+            </div>
+
+            <button type="submit" class="contact-form-submit">Send Message</button>
+          </form>
+
+          <p class="contact-form-note">We respect your privacy. Your information is never shared.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Contact Form CSS -->
+<style>
+/* ContactForm Responsive Styles */
+.contact-form-section {
+  background: var(--color-bg, #18181b);
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 1.5rem 1.5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 100%;
+}
+.contact-form-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary, #fff);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #23232b;
+  color: #fff;
+  outline: none;
+  transition: border 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1.5px solid var(--color-secondary, #7C3AED);
+}
+.contact-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+.contact-form-submit {
+  background: linear-gradient(90deg, #7C3AED 0%, #10B981 100%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(124,58,237,0.10);
+  transition: background 0.2s;
+}
+.contact-form-submit:hover {
+  background: linear-gradient(90deg, #10B981 0%, #7C3AED 100%);
+}
+.contact-form-note {
+  font-size: 0.875rem;
+  color: #aaa;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsive adjustments for two-column layout */
+@media (max-width: 991.98px) {
+  .contact-form-section {
+    margin-top: 1.5rem;
+    padding: 1.25rem 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form-section {
+    padding: 1rem 1rem;
+    max-width: 100%;
+  }
+  .contact-form-title {
+    font-size: 1.25rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+}
+</style>
+<!-- Contact Form Section -->
+
+
+
+    <!-- CTA Section -->
+    <section id="signup" class="py-5"
+    style="background: linear-gradient(135deg, #b108b6 0%, #6610F2 100%); color: #fff;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Ready to Transform Your Services Globally?</h2>
+                    <p class="mb-5">Join thousands of professionals growing with WiseStudio.</p>
+                    
+                    <div class="cta-contact-buttons mb-5">
+                        <button onclick="makeCall()" class="btn btn-outline-light btn-lg me-3 mb-3" title="Click to call on mobile or view number on desktop">
+                            <i class="fas fa-phone me-2"></i>📞 Call Us
+                        </button>
+                        <button onclick="sendMail()" class="btn btn-outline-light btn-lg mb-3" title="Click to email on mobile or view email on desktop">
+                            <i class="fas fa-envelope me-2"></i>✉️ Mail Us
+                        </button>
+                    </div>
+                    
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light btn-lg w-100">Start Free Trial</button>
+                        </div>
+                    </form>
+                    
+                    <p class="mt-4 small">By signing up, you agree to our <a href="#" class="text-white">Terms of Service</a> and <a href="#" class="text-white">Privacy Policy</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">
+                        <img src="assets/images/wisestudio-logo.png" alt="WiseStudio" height="60" class="me-2">WiseStudio
+                    </h5>
+                    <p class="mb-3">Streamline your business worldwide with tools to teach, manage, and grow their practice online. Perfect for healthcare, fitness, education, and professional services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <div class="contact-info">
+                        <p class="mb-2"><strong>WiseMount Pvt Ltd</strong></p>
+                        <p class="mb-2">247/12-1 A, Railway Extension Road,<br>Tenkasi-627811, Tamil Nadu, India</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i>wisemount@outlook.com</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i>+91 9500027086</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Healthcare & Wellness</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="categories/doctors.html">Doctors & Clinics</a></li>
+                        <li><a href="categories/alternative-health.html">Alternative Health</a></li>
+                        <li><a href="categories/therapy-coaching.html">Therapy & Coaching</a></li>
+                        <li><a href="categories/wellness-coaches.html">Wellness Coaches</a></li>
+                        <li><a href="categories/fitness-trainers.html">Fitness Trainers</a></li>
+                        <li><a href="categories/beauty-spa.html">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Education & Professional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="categories/schools.html">Schools</a></li>
+                        <li><a href="categories/colleges.html">Colleges</a></li>
+                        <li><a href="categories/tuitions.html">Tuitions</a></li>
+                        <li><a href="categories/creative-arts.html">Creative Arts</a></li>
+                        <li><a href="categories/advocates.html">Advocates</a></li>
+                        <li><a href="categories/events.html">Events & Workshops</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="text-center">
+                        <p class="mb-1">&copy; 2025 WiseStudio. All rights reserved.</p>
+                        <p class="mb-2">
+                            Powered by <strong>
+                                <a href="https://www.businesstechlabs.com/" target="_blank" style="color: #87CEEB; text-decoration: none;">BusinessTechLabs</a>
+                            </strong> Studio Management Platform
+                        </p>
+                        <div class="footer-links mt-3">
+                            <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+                            <a href="#" class="text-decoration-none me-3">Terms of Service</a>
+                            <a href="#" class="text-decoration-none">Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--Footer End-->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Initialize Carousel and UI Enhancements -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the hero carousel
+    var heroCarousel = new bootstrap.Carousel(document.getElementById('heroCarousel'), {
+        interval: 4000,
+        wrap: true,
+        pause: false,
+        ride: 'carousel'
+    });
+    
+    // Initialize the snapshots carousel
+    var snapshotsCarousel = new bootstrap.Carousel(document.getElementById('snapshotsCarousel'), {
+        interval: 3000,
+        wrap: true,
+        pause: 'hover',
+        ride: 'carousel'
+    });
+    
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Add fade-in animation for sections when they come into view
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+    
+    // Add loading state removal for carousel
+    setTimeout(() => {
+        document.getElementById('heroCarousel').classList.remove('loading');
+    }, 1000);
+    
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(177, 8, 182, 0.98)';
+        } else {
+            navbar.style.background = 'rgba(177, 8, 182, 0.95)';
+        }
+    });
+    
+    // Add hover effects to feature boxes
+    document.querySelectorAll('.feature-box').forEach(box => {
+        box.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px)';
+        });
+        
+        box.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+});
+
+// Contact functions for CTA section
+function makeCall() {
+    const phoneNumber = "+91 9500027086";
+    
+    // Check if user is on mobile device
+    if (isMobileDevice()) {
+        // On mobile: directly initiate call
+        window.location.href = "tel:" + phoneNumber;
+    } else {
+        // On desktop: show phone number in alert/popup
+        alert("📞 Call us at: " + phoneNumber + "\n\nClick OK to copy the number to clipboard.");
+        
+        // Try to copy to clipboard
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(phoneNumber).then(() => {
+                console.log("Phone number copied to clipboard");
+            }).catch(err => {
+                console.error("Could not copy phone number: ", err);
+            });
+        } else {
+            // Fallback for older browsers
+            copyToClipboardFallback(phoneNumber);
+        }
+    }
+}
+
+function sendMail() {
+    const emailAddress = "wisemount@outlook.com";
+    const subject = "Inquiry about WiseStudio";
+    const body = "Hello, I am interested in learning more about WiseStudio services. Please contact me.";
+    
+    // Check if user is on mobile device
+    if (isMobileDevice()) {
+        // On mobile: directly open email app
+        window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    } else {
+        // On desktop: show email address and options
+        const userChoice = confirm(`📧 Email us at: ${emailAddress}\n\nClick OK to open your email client or Cancel to copy email address to clipboard.`);
+        
+        if (userChoice) {
+            // User chose to open email client
+            window.location.href = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        } else {
+            // User chose to copy email to clipboard
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(emailAddress).then(() => {
+                    alert("Email address copied to clipboard!");
+                }).catch(err => {
+                    console.error("Could not copy email address: ", err);
+                    alert("Email address: " + emailAddress);
+                });
+            } else {
+                // Fallback for older browsers
+                copyToClipboardFallback(emailAddress);
+                alert("Email address copied: " + emailAddress);
+            }
+        }
+    }
+}
+
+// Helper function to detect mobile devices
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || 
+           (window.innerWidth <= 768 && 'ontouchstart' in window);
+}
+
+// Fallback function to copy text to clipboard for older browsers
+function copyToClipboardFallback(text) {
+    const textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.position = "fixed";
+    textArea.style.left = "-999999px";
+    textArea.style.top = "-999999px";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+        document.execCommand('copy');
+    } catch (err) {
+        console.error('Fallback: Could not copy text: ', err);
+    }
+    
+    document.body.removeChild(textArea);
+}
+</script>
+
+</body>
+</html>

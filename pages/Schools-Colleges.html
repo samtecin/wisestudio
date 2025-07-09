@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School & College Management Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --accent: #4fc3f7;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .sector-header {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .sector-header h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .sector-header h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            width: 50%;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--accent);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .feature-list li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--success);
+        }
+        
+        .use-cases {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .use-cases h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .use-case {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .use-case:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .use-case-title {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .use-case-title i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .use-case-desc {
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>School & College Management Platform</h1>
+            <div class="subtitle">A powerful, easy-to-use platform designed specifically for educational institutions</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="sector-header">
+            <h2>Tailored Solutions for Schools & Colleges</h2>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="feature-title">Class & Session Management</h3>
+                <ul class="feature-list">
+                    <li>Manage multiple classes from one place</li>
+                    <li>Schedule one-to-one tutoring sessions</li>
+                    <li>Organize workshops and special programs</li>
+                    <li>Manage class capacity and enrollments</li>
+                    <li>Set up weekly class schedules</li>
+                    <li>Customize class settings</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-id-card"></i>
+                </div>
+                <h3 class="feature-title">Membership & Tier Management</h3>
+                <ul class="feature-list">
+                    <li>Create different membership tiers (students, faculty, staff)</li>
+                    <li>Manage member enrollments</li>
+                    <li>Track class attendance for members</li>
+                    <li>Pause and resume memberships (for breaks/semesters)</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <h3 class="feature-title">Payment & Finance</h3>
+                <ul class="feature-list">
+                    <li>Multiple payment gateway support</li>
+                    <li>Create discount coupons for tuition</li>
+                    <li>Early bird registration discounts</li>
+                    <li>Dynamic pricing for different programs</li>
+                    <li>View transaction history</li>
+                    <li>Student account balances</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h3 class="feature-title">Subscription & Booking</h3>
+                <ul class="feature-list">
+                    <li>Students can enroll in courses and workshops</li>
+                    <li>Administrators can enroll students</li>
+                    <li>Waitlist management for popular courses</li>
+                    <li>Automatic enrollment notifications</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <h3 class="feature-title">User Access & Role Management</h3>
+                <ul class="feature-list">
+                    <li>Role-based access for faculty and staff</li>
+                    <li>Custom permission levels</li>
+                    <li>Secure login for all users</li>
+                </ul>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Reports & Analytics</h3>
+                <ul class="feature-list">
+                    <li>Generate attendance reports</li>
+                    <li>Track student performance</li>
+                    <li>Financial reporting</li>
+                    <li>Course enrollment statistics</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="use-cases">
+            <h3>How Schools & Colleges Benefit</h3>
+            
+            <div class="use-case">
+                <div class="use-case-title">
+                    <i class="fas fa-school"></i>
+                    <span>Course Management Simplified</span>
+                </div>
+                <div class="use-case-desc">
+                    Easily manage all your classes, workshops, and special programs from one centralized platform. Set different capacities for each course, schedule recurring classes, and handle one-on-one tutoring sessions with the same system.
+                </div>
+            </div>
+            
+            <div class="use-case">
+                <div class="use-case-title">
+                    <i class="fas fa-user-graduate"></i>
+                    <span>Student Enrollment & Attendance</span>
+                </div>
+                <div class="use-case-desc">
+                    Streamline student enrollment processes with online registration, automatic waitlist management, and real-time attendance tracking. Create different membership tiers for students, faculty, and staff with appropriate access levels.
+                </div>
+            </div>
+            
+            <div class="use-case">
+                <div class="use-case-title">
+                    <i class="fas fa-money-check-alt"></i>
+                    <span>Tuition & Fee Collection</span>
+                </div>
+                <div class="use-case-desc">
+                    Accept payments securely through multiple gateways. Offer early bird discounts, create promotional codes, and manage installment plans. Keep track of all financial transactions and generate reports for accounting purposes.
+                </div>
+            </div>
+            
+            <div class="use-case">
+                <div class="use-case-title">
+                    <i class="fas fa-chalkboard"></i>
+                    <span>Faculty & Staff Management</span>
+                </div>
+                <div class="use-case-desc">
+                    Assign different access levels to faculty and administrative staff. Teachers can manage their classes while administrators oversee the entire institution's operations - all within the same platform.
+                </div>
+            </div>
+            
+            <div class="use-case">
+                <div class="use-case-title">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Data-Driven Decision Making</span>
+                </div>
+                <div class="use-case-desc">
+                    Generate comprehensive reports on student attendance, course popularity, financial performance, and more. Use these insights to optimize your course offerings and resource allocation.
+                </div>
+            </div>
+            
+            <div class="use-case">
+                <div class="use-case-title">
+                    <i class="fas fa-bell"></i>
+                    <span>Automated Communication</span>
+                </div>
+                <div class="use-case-desc">
+                    Keep students and parents informed with automatic notifications about class schedules, enrollment confirmations, payment receipts, and important announcements. Customize email templates to maintain your institution's branding.
+                </div>
+            </div>
+            
+            <div class="use-case">
+                <div class="use-case-title">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure Data Management</span>
+                </div>
+                <div class="use-case-desc">
+                    Rest assured that all student and institutional data is securely stored and never shared externally. Comply with education data privacy regulations with our secure platform.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

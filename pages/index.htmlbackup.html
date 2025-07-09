@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseWell Studio -Smart All-in-One Studio Platform for Healthcare, Wellness, and Creative Educators Worldwide</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #FF6584;
+            --success: #4CAF50;
+            --info: #00BCD4;
+            --warning: #FFC107;
+            --danger: #F44336;
+            --light: #F8F9FA;
+            --dark: #212529;
+            --purple-light: #A78BFA;
+            --teal: #20C997;
+            --indigo: #6610F2;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary), var(--indigo));
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: white !important;
+        }
+        
+        .nav-link {
+            color: rgba(255,255,255,0.8) !important;
+            font-weight: 500;
+            margin: 0 5px;
+        }
+        
+        .nav-link:hover {
+            color: white !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .btn-cta {
+            background-color: white;
+            color: var(--primary);
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            color: var(--indigo);
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .category-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .category-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .category-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            color: white;
+            padding: 20px;
+        }
+        
+        .testimonial-card {
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            background-color: white;
+            height: 100%;
+        }
+        
+        .testimonial-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+        }
+        
+        .pricing-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid var(--primary);
+            transform: scale(1.03);
+        }
+        
+        .pricing-card.popular .pricing-header {
+            background: linear-gradient(135deg, var(--primary), var(--indigo));
+            color: white;
+        }
+        
+        .pricing-header {
+            background-color: var(--light);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            /*color: var(--primary); */
+            color: #f8fafb;
+        }
+        
+        .pricing-period {
+            color: #f8fafb;
+        }
+        
+        .pricing-feature {
+            padding: 10px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pricing-feature:last-child {
+            border-bottom: none;
+        }
+        
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, var(--primary), var(--indigo));
+        }
+        
+        .text-primary {
+            color: var(--primary) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: #5a52d9;
+            border-color: #5a52d9;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+        
+        .how-it-works-step {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 30px;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        footer {
+            background-color: #2A2D3E;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-links h5 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background-color: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .how-it-works-step {
+                padding-left: 60px;
+            }
+            
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-spa me-2"></i>WiseWell Studio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Empower Your Wellness Business Globally</h1>
+                    <p class="hero-subtitle">All-in-one platform for wellness professionals to teach, manage, and grow their practice online with integrated UPI payments.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#signup" class="btn btn-cta">Start Free Trial</a>
+                        <a href="#demo" class="btn btn-outline-light rounded-pill px-4">Book a Demo</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="WiseWell Studio" class="img-fluid rounded-4 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Powerful Features for Your Wellness Business</h2>
+            <p class="text-center mb-5">Everything you need to manage and grow your wellness practice online</p>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Live & Recorded Classes</h4>
+                        <p>Host live sessions with HD video and audio, or upload pre-recorded classes for your students to access anytime.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h4>Integrated UPI Payments</h4>
+                        <p>Accept payments seamlessly through UPI, credit cards, and other popular methods with low transaction fees.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Scheduling & Booking</h4>
+                        <p>Let clients book sessions easily with your real-time availability. Automatic reminders reduce no-shows.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Client Management</h4>
+                        <p>Track client progress, notes, and history in one place. Segment your audience for targeted communication.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Analytics Dashboard</h4>
+                        <p>Get insights into your business performance, revenue trends, and client engagement metrics.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card p-4 bg-white">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Global Reach</h4>
+                        <p>Teach students from anywhere in the world with our seamless platform that handles timezones and currencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Video Gallery Section -->
+    <section id="video-gallery" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Watch WiseWell Studio in Action</h2>
+            <p class="text-center mb-5">Explore our platform features, client stories, and tutorials</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/9h_ItjojikA" title="WiseWell Studio Overview" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Platform Overview</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/6tB7ZeYmGUA" title="Getting Started Guide" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Getting Started Guide</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/OSga0EeRxJk" title="Live Class Demo" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Live Class Demo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/XUqtup5SwEA" title="Client Success Story" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Client Success Story</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/ffXltNqRt3s" title="Marketing Tools Walkthrough" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Tools Walkthrough</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/Q7RP_iHY70Y" title="Payments & Integrations" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Payments & Integrations</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Perfect for All Wellness & Education Professionals</h2>
+            <p class="text-center mb-4">
+                Our all-in-one SaaS platform empowers coaches, educators, and wellness professionals to manage bookings, payments, and client relationships seamlessly.
+Integrate it into your website or launch a branded app to offer online and offline sessions globally.
+Streamline operations, boost visibility, and grow your business with powerful automation and marketing tools.
+            </p>
+            <div class="row g-4">
+                <!-- Health & Wellness -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Health & Wellness" class="img-fluid category-img">
+                        <div class="category-overlay">
+                            <h3>🧘‍♀ Health & Wellness</h3>
+                            <p class="mb-0">
+                                Yoga instructors, Meditation coaches, Breathwork & sound healing guides, Ayurvedic practitioners, Reiki & energy healers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fitness & Sports -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Fitness & Sports" class="img-fluid category-img">
+                        <div class="category-overlay">
+                            <h3>💪 Fitness & Sports</h3>
+                            <p class="mb-0">
+                                Gym trainers, Zumba/dance instructors, Martial arts & self-defense, Crossfit coaches, Personal trainers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Beauty & Spa -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" alt="Beauty & Spa" class="img-fluid category-img">
+                        <div class="category-overlay">
+                            <h3>💆‍♂ Beauty & Spa</h3>
+                            <p class="mb-0">
+                                Massage therapists, Facial & skincare clinics, Hair stylists/salons, Nail technicians, Ayurveda & detox centers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Therapy & Coaching -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1515168833906-d2a3b82b1e6e?auto=format&fit=crop&w=800&q=80" alt="Therapy & Coaching" class="img-fluid category-img">
+                        <div class="category-overlay">
+                            <h3>🧠 Therapy & Coaching</h3>
+                            <p class="mb-0">
+                                Psychologists/therapists, Life coaches, Nutritionists & dietitians, Career/academic coaches, Parenting coaches
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Creative Education -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Creative Education" class="img-fluid category-img">
+                        <div class="category-overlay">
+                            <h3>🎨 Creative Education</h3>
+                            <p class="mb-0">
+                                Art & craft teachers, Music & dance tutors, Photography & creative workshops, Acting & film schools
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tutoring & Online Learning -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80" alt="Tutoring & Online Learning" class="img-fluid category-img">
+                        <div class="category-overlay">
+                            <h3>📚 Tutoring & Online Learning</h3>
+                            <p class="mb-0">
+                                Subject tutors, Competitive exam coaching, Language teachers, Coding/technical training
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event & Retreat Organizers -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80" alt="Event & Retreat Organizers" class="img-fluid category-img">
+                        <div class="category-overlay">
+                            <h3>🏕 Event & Retreat Organizers</h3>
+                            <p class="mb-0">
+                                Wellness retreat planners, Bootcamps, Certification programs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#signup" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title">How Wise Wellness Studio Works</h2>
+            <p class="text-center mb-5">Get started in just a few simple steps</p>
+            
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="how-it-works-step">
+                        <div class="step-number">1</div>
+                        <h3>Create Your Profile</h3>
+                        <p>Set up your professional profile with photos, bio, credentials, and services offered. Customize your profile to reflect your unique brand and expertise.</p>
+                    </div>
+                    
+                    <div class="how-it-works-step">
+                        <div class="step-number">2</div>
+                        <h3>Schedule Your Classes</h3>
+                        <p>Add your availability and create class offerings. Set different pricing for individual sessions, packages, or memberships. Our smart scheduling handles timezones automatically.</p>
+                    </div>
+                    
+                    <div class="how-it-works-step">
+                        <div class="step-number">3</div>
+                        <h3>Share Your Booking Link</h3>
+                        <p>Share your personalized booking page via social media, email, or website. Clients can view your availability and book sessions directly.</p>
+                    </div>
+                    
+                    <div class="how-it-works-step">
+                        <div class="step-number">4</div>
+                        <h3>Conduct Sessions & Get Paid</h3>
+                        <p>Host live sessions through our integrated video platform or in-person. Payments are processed automatically with UPI, cards, or other methods, with payouts to your bank account.</p>
+                    </div>
+                    
+                    <div class="how-it-works-step">
+                        <div class="step-number">5</div>
+                        <h3>Grow Your Business</h3>
+                        <p>Use our marketing tools, client management features, and analytics to expand your reach and optimize your offerings based on real data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center section-title">What Our Community Says</h2>
+            <p class="text-center mb-5">Hear from wellness professionals who transformed their practice</p>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya K." class="testimonial-img me-4">
+                            <div>
+                                <h5 class="mb-1">Priya K.</h5>
+                                <p class="text-muted mb-0">Yoga Instructor</p>
+                            </div>
+                        </div>
+                        <p>"Wise Wellness Studio has helped me triple my client base in just 6 months. The UPI payment integration is seamless for my Indian students, while international payments work perfectly too."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rahul S." class="testimonial-img me-4">
+                            <div>
+                                <h5 class="mb-1">Rahul S.</h5>
+                                <p class="text-muted mb-0">Fitness Coach</p>
+                            </div>
+                        </div>
+                        <p>"The scheduling features saved me hours each week. My clients love being able to book and reschedule themselves, and I love not having to manage payments manually anymore."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ananya M." class="testimonial-img me-4">
+                            <div>
+                                <h5 class="mb-1">Ananya M.</h5>
+                                <p class="text-muted mb-0">Meditation Guide</p>
+                            </div>
+                        </div>
+                        <p>"From Mumbai to Melbourne, I now have students worldwide. The platform handles all the technical details so I can focus on teaching. The video quality is excellent even with slow connections."</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="text-center section-title">Simple, Transparent Pricing</h2>
+            <p class="text-center mb-5">One plan, all features. Everything you need to run and grow your wellness business.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-lg rounded-4">
+                        <div class="card-body p-5 text-center bg-gradient-primary text-white rounded-4 position-relative">
+                            <div class="position-absolute top-0 end-0 m-3">
+                                <span class="badge bg-warning text-dark fs-6 px-3 py-2">Most Popular</span>
+                            </div>
+                            <h3 class="fw-bold mb-3">All-Inclusive Plan</h3>
+                            <div class="display-4 fw-bold mb-2" style="color: #FFD600;">
+                                ₹3500<span class="fs-4" style="color: #fff;">/month</span>
+                            </div>
+                            <p class="mb-4">All features included. No hidden fees.</p>
+                            <ul class="list-unstyled text-start mx-auto mb-4" style="max-width: 400px;">
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Unlimited students & staff accounts</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Unlimited live & recorded classes</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Advanced scheduling & booking</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Integrated UPI, card & international payments</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Branded website & app integration</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> CRM & client management</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Automated reminders & notifications</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Memberships, packages & class passes</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Marketing & promotional tools</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Analytics & business reporting</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Event & workshop management</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> Waitlists & attendance tracking</li>
+                                <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i> 24/7 priority support</li>
+                            </ul>
+                            <a href="#signup" class="btn btn-warning btn-lg rounded-pill px-5 fw-bold shadow">Start Free Trial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>Need a custom solution? <a href="#contact">Contact our team</a> for studios and organizations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="signup" class="py-5 bg-gradient-primary text-white">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Ready to Transform Your Wellness Business?</h2>
+                    <p class="mb-5">Join thousands of wellness professionals growing their practice with Wise Wellness Studio. Start your 14-day free trial today — no credit card required.</p>
+                    
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Enter your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light btn-lg w-100">Start Free Trial</button>
+                        </div>
+                    </form>
+                    
+                    <p class="mt-4 small">By signing up, you agree to our <a href="#" class="text-white">Terms of Service</a> and <a href="#" class="text-white">Privacy Policy</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="text-white mb-4"><i class="fas fa-spa me-2"></i>WiseWell Studio</h3>
+                    <p>Empowering wellness professionals worldwide with tools to teach, manage, and grow their practice online.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <div class="footer-links">
+                        <h5>Product</h5>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Updates</a></li>
+                            <li><a href="#">Roadmap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <div class="footer-links">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Webinars</a></li>
+                            <li><a href="#">Templates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-lg-2">
+                    <div class="footer-links">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="mb-1">&copy; 2025 WiseWell Studio. All rights reserved.</p>
+                <p class="mb-0" style="color: #fff; font-size: 1rem;">
+        Powered by <strong>
+            <a href="https://yogicfuture.com/" target="_blank" style="color: #fff; text-decoration: underline;">YogicFuture</a>
+        </strong> Studio Management Platform
+    </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

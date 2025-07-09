@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseStudio – Colleges</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (copy from index.html) -->
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 350px;
+        }
+        .hero-section .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(40,16,60,0.55);
+            z-index: 1;
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: var(--primary, #b108b6);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-leaf me-2"></i>WiseStudio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#how-it-works">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="index.html#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- ...navbar code here... -->
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" style="background-image: url('images/hero1.jpg');">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h1 class="hero-title">Colleges</h1>
+                    <p class="hero-subtitle">Modernize campus scheduling, events, and student engagement with WiseStudio.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="#signup" class="btn btn-cta">Start Free Trial</a>
+                        <a href="#demo" class="btn btn-outline-light rounded-pill px-4">Book a Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sector-Specific Content -->
+    <section class="py-5" style="background: linear-gradient(135deg, #f8fafb 60%, #f3e8ff 100%);">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-4" style="font-weight:700;">Why WiseStudio for Colleges?</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <ul class="list-group list-group-flush fs-5 mb-4">
+                        <li class="list-group-item bg-transparent"><i class="fas fa-calendar-alt text-primary me-2"></i> Manage classes, workshops, and campus events</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-users text-primary me-2"></i> Track student attendance and engagement</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-rupee-sign text-primary me-2"></i> Collect fees and payments online</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-chart-bar text-primary me-2"></i> View analytics and reports</li>
+                        <li class="list-group-item bg-transparent"><i class="fas fa-bell text-primary me-2"></i> Send notifications to students and faculty</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (copy from index.html) -->
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="text-white mb-4"><i class="fas fa-spa me-2"></i>WiseStudio</h3>
+                    <p>Empowering wellness professionals worldwide with tools to teach, manage, and grow their practice online.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="mb-1">&copy; 2025 WiseStudio. All rights reserved.</p>
+                <p class="mb-0" style="color: #fff; font-size: 1rem;">
+        Powered by <strong>
+            <a href="https://www.businesstechlabs.com/" target="_blank" style="color: #fff; text-decoration: underline;">BusinessTechLabs</a>
+        </strong> Studio Management Platform
+    </p>
+            </div>
+        </div>
+    </footer>
+    <!-- ...footer code here... -->
+</body>
+</html>

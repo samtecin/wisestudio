@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - WiseStudio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/wisestudio-logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/wisestudio-logo.png" alt="WiseStudio" class="me-2">WiseStudio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Use Cases
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <li><h6 class="dropdown-header">Healthcare</h6></li>
+                            <li><a class="dropdown-item" href="categories/doctors.html">🩺 Doctors & Clinics</a></li>
+                            <li><a class="dropdown-item" href="categories/alternative-health.html">🌿 Alternative Health</a></li>
+                            <li><a class="dropdown-item" href="categories/therapy-coaching.html">🛋️ Therapy & Coaching</a></li>
+                            <li><a class="dropdown-item" href="categories/wellness-coaches.html">🧘 Wellness Coaches</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <li><h6 class="dropdown-header">Fitness & Beauty</h6></li>
+                            <li><a class="dropdown-item" href="categories/fitness-trainers.html">💪 Fitness Trainers</a></li>
+                            <li><a class="dropdown-item" href="categories/beauty-spa.html">💇 Beauty & Spa</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <li><h6 class="dropdown-header">Education</h6></li>
+                            <li><a class="dropdown-item" href="categories/schools.html">🏫 Schools</a></li>
+                            <li><a class="dropdown-item" href="categories/colleges.html">🏛️ Colleges</a></li>
+                            <li><a class="dropdown-item" href="categories/tuitions.html">📚 Tuitions</a></li>
+                            <li><a class="dropdown-item" href="categories/creative-arts.html">🎨 Creative Arts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            
+                            <li><h6 class="dropdown-header">Professional</h6></li>
+                            <li><a class="dropdown-item" href="categories/advocates.html">⚖️ Advocates</a></li>
+                            <li><a class="dropdown-item" href="categories/events.html">🎉 Events & Workshops</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="index.html#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Features Page -->
+    <section class="py-5 text-white" style="background: linear-gradient(135deg, #b108b6 0%, #6610F2 100%); margin-top: 0;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-4 fw-bold mb-4">Complete Platform Features</h1>
+                    <p class="lead mb-4">Discover all the powerful tools and capabilities that make WiseStudio the perfect solution for managing your business across any industry.</p>
+                    <div class="d-flex flex-wrap gap-2 justify-content-center">
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">🩺 Healthcare</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">🏫 Education</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">💪 Fitness & Beauty</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">⚖️ Professional</span>
+                        <span class="badge bg-light text-dark rounded-pill px-3 py-2">🎉 Events</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Features Included Section -->
+    <section id="features2" class="py-5"
+        style="background: linear-gradient(135deg, #e0f7fa 0%, #f7f7fa 100%);">
+        <div class="container py-5">
+            <h2 class="text-center section-title mb-5" style="font-weight:700;">All Features Included</h2>
+            <div class="row g-4">
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-primary" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-calendar-check text-primary me-2"></i>Online Booking & Scheduling</h5>
+                        <p class="mb-0 text-muted">Let clients book classes, appointments, and events online 24/7 with real-time availability and automated reminders.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-success" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-credit-card text-primary me-2"></i>Integrated Payments</h5>
+                        <p class="mb-0 text-muted">Accept UPI, cards, wallets, and international payments. Automatic invoicing and payout to your bank account.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-info" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-users text-primary me-2"></i>Client Management (CRM)</h5>
+                        <p class="mb-0 text-muted">Maintain client profiles, track attendance, notes, memberships, and communication history in one place.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-primary" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-video text-primary me-2"></i>Live & Recorded Classes</h5>
+                        <p class="mb-0 text-muted">Host HD live sessions or upload recorded content. Share links, resources, and session replays securely.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-success" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-bullhorn text-primary me-2"></i>Marketing & Promotions</h5>
+                        <p class="mb-0 text-muted">Send bulk emails, WhatsApp/SMS, run offers, coupons, and referral programs to grow your business.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-info" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-chart-line text-primary me-2"></i>Analytics & Reports</h5>
+                        <p class="mb-0 text-muted">Track revenue, attendance, client growth, and engagement with easy-to-read dashboards and downloadable reports.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-primary" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-mobile-alt text-primary me-2"></i>Branded Website & App</h5>
+                        <p class="mb-0 text-muted">Get your own branded booking website and mobile app. Seamless integration with your existing site.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-success" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-users-cog text-primary me-2"></i>Staff & Role Management</h5>
+                        <p class="mb-0 text-muted">Add unlimited staff, set permissions, manage payroll, and track performance.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-primary" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-gift text-primary me-2"></i>Memberships, Packages & Passes</h5>
+                        <p class="mb-0 text-muted">Sell memberships, class packs, and passes. Automate renewals, reminders, and access control.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-success" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-bell text-primary me-2"></i>Automated Reminders & Notifications</h5>
+                        <p class="mb-0 text-muted">Reduce no-shows with automated email, SMS, and WhatsApp reminders for bookings and payments.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-primary" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-certificate text-primary me-2"></i>Certification & Event Management</h5>
+                        <p class="mb-0 text-muted">Organize workshops, retreats, and certification programs. Manage registrations, payments, and attendance.</p>
+                    </div>
+                </div>
+                <!-- Feature Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-success" style="transition: box-shadow 0.2s;">
+                        <h5 class="fw-bold mb-2"><i class="fas fa-headset text-primary me-2"></i>Priority Support</h5>
+                        <p class="mb-0 text-muted">Get 24/7 priority support via chat, email, and phone. Dedicated onboarding and migration assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Platform Features Section -->
+    <section id="features-all" class="py-5"
+        style="background: linear-gradient(135deg, #f7f7fa 0%, #e0c3fc 100%);">
+      <div class="container py-5">
+        <h2 class="text-center section-title mb-4" style="font-weight:700;">🧘‍♂️ WiseStudio Platform Features</h2>
+        <p class="text-center mb-5">A powerful, easy-to-use business platform designed specifically for yoga studios, schools, and wellness professionals</p>
+        <div class="row g-4">
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-primary rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-calendar-check" style="font-size:2.5rem; color:var(--primary);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Class & Session Management</h5>
+              <ul class="text-start">
+                <li>Manage multiple classes from one place</li>
+                <li>One-to-one (private) session scheduling</li>
+                <li>Manage practice sessions, programs, and workshops</li>
+                <li>Set limits on participants</li>
+                <li>Add classes from Monday to Sunday</li>
+                <li>Change class-related settings</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-success rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-people-fill" style="font-size:2.5rem; color:var(--success);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Membership & Tier Management</h5>
+              <ul class="text-start">
+                <li>Manage membership tiers</li>
+                <li>Add members to tiers</li>
+                <li>Grant attendance access</li>
+                <li>Pause/resume memberships</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-info rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-credit-card" style="font-size:2.5rem; color:var(--info);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Payment & Finance</h5>
+              <ul class="text-start">
+                <li>Supports RazorPay & Stripe</li>
+                <li>Discount coupons (flat or %)</li>
+                <li>Early bird discounts</li>
+                <li>Dynamic pricing feature</li>
+                <li>Transaction history</li>
+                <li>Add balance to client wallet</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-warning rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-calendar-plus" style="font-size:2.5rem; color:var(--warning);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Subscription & Booking</h5>
+              <ul class="text-start">
+                <li>Subscribe to private sessions, workshops</li>
+                <li>Admin can subscribe clients</li>
+                <li>Manage waitlists</li>
+                <li>Email notifications on booking</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-secondary rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-person-gear" style="font-size:2.5rem; color:var(--secondary);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">User Access & Role Management</h5>
+              <ul class="text-start">
+                <li>Role-based access control for staff</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-indigo rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-graph-up-arrow" style="font-size:2.5rem; color:var(--indigo);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Reports & Analytics</h5>
+              <ul class="text-start">
+                <li>Generate dynamic reports</li>
+                <li>Track attendance and scores</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-danger rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-bell-fill" style="font-size:2.5rem; color:var(--danger);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Notifications & Communication</h5>
+              <ul class="text-start">
+                <li>Customizable email templates</li>
+                <li>Push notifications</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-primary rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-person-check-fill" style="font-size:2.5rem; color:var(--primary);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Onboarding & Personalization</h5>
+              <ul class="text-start">
+                <li>Smooth onboarding experience</li>
+                <li>Clients can update profile</li>
+                <li>Admins can update settings</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-teal rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-building" style="font-size:2.5rem; color:var(--teal);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Space & Availability</h5>
+              <ul class="text-start">
+                <li>Admins can share available space</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-warning rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-shield-lock" style="font-size:2.5rem; color:var(--warning);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">Security & Compliance</h5>
+              <ul class="text-start">
+                <li>Data encryption and secure access</li>
+                <li>GDPR and local compliance</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="feature-box text-center h-100 p-4 border border-2 border-success rounded-4 shadow-sm" style="background: #fff; transition: box-shadow 0.2s;">
+              <div class="mb-3">
+                <i class="bi bi-headset" style="font-size:2.5rem; color:var(--success);"></i>
+              </div>
+              <h5 class="fw-bold mb-2">24/7 Support</h5>
+              <ul class="text-start">
+                <li>Round-the-clock customer support</li>
+                <li>Dedicated account manager for studios</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #b108b6 0%, #6610F2 100%); color: #fff;">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Ready to Get Started?</h2>
+                    <p class="mb-5">Experience all these powerful features with our 14-day free trial — no credit card required.</p>
+                    
+                    <div class="text-center">
+                        <a href="index.html#signup" class="btn btn-warning btn-lg rounded-pill px-5 me-3 mb-2">Start Free Trial</a>
+                        <a href="index.html#pricing" class="btn btn-outline-light btn-lg rounded-pill px-5 mb-2">View Pricing</a>
+                    </div>
+                    
+                    <p class="mt-4 small">By signing up, you agree to our <a href="#" class="text-white">Terms of Service</a> and <a href="#" class="text-white">Privacy Policy</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">
+                        <img src="assets/images/wisestudio-logo.png" alt="WiseStudio" height="72" class="me-2">WiseStudio
+                    </h5>
+                    <p class="mb-3">Streamline your business worldwide with tools to teach, manage, and grow their practice online. Perfect for healthcare, fitness, education, and professional services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Healthcare</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="categories/doctors.html">Doctors & Clinics</a></li>
+                        <li><a href="categories/alternative-health.html">Alternative Health</a></li>
+                        <li><a href="categories/therapy-coaching.html">Therapy & Coaching</a></li>
+                        <li><a href="categories/wellness-coaches.html">Wellness Coaches</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Fitness & Beauty</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="categories/fitness-trainers.html">Fitness Trainers</a></li>
+                        <li><a href="categories/beauty-spa.html">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Education</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="categories/schools.html">Schools</a></li>
+                        <li><a href="categories/colleges.html">Colleges</a></li>
+                        <li><a href="categories/tuitions.html">Tuitions</a></li>
+                        <li><a href="categories/creative-arts.html">Creative Arts</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Professional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="categories/advocates.html">Advocates</a></li>
+                        <li><a href="categories/events.html">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="text-center text-md-start">
+                        <p class="mb-1">&copy; 2025 WiseStudio. All rights reserved.</p>
+                        <p class="mb-0" style="color: #bdc3c7; font-size: 0.9rem;">
+                            Powered by <strong>
+                                <a href="https://www.businesstechlabs.com/" target="_blank" style="color: #3498db; text-decoration: none;">BusinessTechLabs</a>
+                            </strong> Studio Management Platform
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <a href="#" class="text-decoration-none me-3" style="color: #bdc3c7;">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none me-3" style="color: #bdc3c7;">Terms of Service</a>
+                    <a href="#" class="text-decoration-none" style="color: #bdc3c7;">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- UI Enhancements -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add fade-in animation for sections when they come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(177, 8, 182, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(177, 8, 182, 0.95)';
+            }
+        });
+        
+        // Add hover effects to feature boxes
+        document.querySelectorAll('.feature-box').forEach(box => {
+            box.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+            });
+            
+            box.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>

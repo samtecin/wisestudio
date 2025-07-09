@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseStudio – Doctors</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 350px;
+        }
+        .hero-section .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(40,16,60,0.55);
+            z-index: 1;
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #b108b6;
+        }
+        .benefit-img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: var(--primary, #b108b6);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-leaf me-2"></i>WiseStudio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#how-it-works">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="index.html#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center text-white">
+                    <h1 class="hero-title">Doctors, Clinics & Hospitals</h1>
+                    <p class="hero-subtitle fs-4">Modernize your practice with online/offline appointments, telemedicine, billing, and patient engagement—all in one place.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
+                        <a href="#benefits" class="btn btn-cta">See Benefits</a>
+                        <a href="index.html#signup" class="btn btn-outline-light rounded-pill px-4">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Doctors Benefit Section -->
+    <section id="benefits" class="py-5" style="background: linear-gradient(135deg, #f8fafb 60%, #f3e8ff 100%);">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-4" style="font-weight:700;">How WiseStudio Helps Doctors & Clinics</h2>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1519494080410-f9aa8f52f165?auto=format&fit=crop&w=800&q=80" alt="Appointment Scheduling" class="benefit-img">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-calendar-check feature-icon me-2"></i>Online & Offline Appointment Scheduling</h4>
+                    <p>Let patients book appointments for in-person or telemedicine consultations. Reduce no-shows with automated reminders and allow easy rescheduling from any device.</p>
+                </div>
+            </div>
+            <div class="row align-items-center flex-md-row-reverse mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1588776814546-ec7e8c1b5b6e?auto=format&fit=crop&w=800&q=80" alt="Telemedicine" class="benefit-img">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-video feature-icon me-2"></i>Telemedicine & Video Consultations</h4>
+                    <p>Offer secure video consultations for remote patients. Share prescriptions, reports, and follow-up instructions online—making healthcare accessible from anywhere.</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1512070679279-c5bfb7c4b8a6?auto=format&fit=crop&w=800&q=80" alt="Patient Records" class="benefit-img">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-notes-medical feature-icon me-2"></i>Digital Patient Records & History</h4>
+                    <p>Maintain secure digital records for every patient—track visits, prescriptions, lab results, and notes. Access patient history instantly for better care and compliance.</p>
+                </div>
+            </div>
+            <div class="row align-items-center flex-md-row-reverse mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1517520287167-4bbf64a00d66?auto=format&fit=crop&w=800&q=80" alt="Online Payments" class="benefit-img">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-rupee-sign feature-icon me-2"></i>Online Payments & Automated Billing</h4>
+                    <p>Collect consultation fees, follow-up charges, and other payments online (UPI, cards, wallets). Generate invoices and receipts automatically for every visit.</p>
+                </div>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=800&q=80" alt="Notifications" class="benefit-img">
+                </div>
+                <div class="col-md-6">
+                    <h4 class="fw-bold mb-3"><i class="fas fa-bell feature-icon me-2"></i>Automated Reminders & Patient Communication</h4>
+                    <p>Send appointment reminders, prescription updates, and health tips via SMS, email, or WhatsApp. Keep patients engaged and informed with minimal effort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #e0c3fc 0%, #f8fafb 100%);">
+        <div class="container py-4">
+            <h2 class="text-center section-title mb-4" style="font-weight:700;">Key Features for Doctors & Clinics</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-primary text-center">
+                        <div class="mb-3"><i class="fas fa-calendar-check feature-icon"></i></div>
+                        <h5 class="fw-bold mb-2">Flexible Scheduling</h5>
+                        <p class="mb-0 text-muted">Set up slots for online and offline consultations, manage walk-ins, and allow patients to book anytime.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-success text-center">
+                        <div class="mb-3"><i class="fas fa-users feature-icon"></i></div>
+                        <h5 class="fw-bold mb-2">Patient Portal</h5>
+                        <p class="mb-0 text-muted">Patients can view appointments, download prescriptions, and access their health records securely.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-info text-center">
+                        <div class="mb-3"><i class="fas fa-credit-card feature-icon"></i></div>
+                        <h5 class="fw-bold mb-2">Secure Payments</h5>
+                        <p class="mb-0 text-muted">Accept payments for consultations, lab tests, and procedures with instant receipts and reporting.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-warning text-center">
+                        <div class="mb-3"><i class="fas fa-bullhorn feature-icon"></i></div>
+                        <h5 class="fw-bold mb-2">Telemedicine Tools</h5>
+                        <p class="mb-0 text-muted">Integrated video calls, file sharing, and e-prescriptions for remote care.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-secondary text-center">
+                        <div class="mb-3"><i class="fas fa-chart-line feature-icon"></i></div>
+                        <h5 class="fw-bold mb-2">Analytics & Reports</h5>
+                        <p class="mb-0 text-muted">Track appointments, revenue, and patient engagement with easy dashboards and downloadable reports.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-4 shadow-sm h-100 border border-2 border-danger text-center">
+                        <div class="mb-3"><i class="fas fa-lock feature-icon"></i></div>
+                        <h5 class="fw-bold mb-2">Privacy & Security</h5>
+                        <p class="mb-0 text-muted">All patient data is encrypted and securely stored, meeting healthcare compliance standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5" style="background: linear-gradient(135deg, #b108b6 0%, #6610F2 100%); color: #fff;">
+        <div class="container text-center py-4">
+            <h2 class="mb-3">Ready to Modernize Your Practice?</h2>
+            <p class="mb-4 fs-5">Start your free trial today and see how WiseStudio can simplify your appointments, billing, and patient care.</p>
+            <a href="index.html#signup" class="btn btn-light btn-lg rounded-pill px-5">Get Started Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--primary, #b108b6); color: #fff;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="text-white mb-4"><i class="fas fa-spa me-2"></i>WiseStudio</h3>
+                    <p>Empowering healthcare professionals worldwide with tools to manage, consult, and grow their practice online.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-column align-items-center justify-content-center mt-4">
+                        <p class="mb-1">&copy; 2025 WiseStudio. All rights reserved.</p>
+                        <p class="mb-0" style="color: #fff; font-size: 1rem;">
+                            Powered by <strong>
+                                <a href="https://www.businesstechlabs.com/" target="_blank" style="color: #fff; text-decoration: underline;">BusinessTechLabs</a>
+                            </strong> Studio Management Platform
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
