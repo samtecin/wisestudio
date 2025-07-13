@@ -115,7 +115,7 @@
     <!-- Main Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#Home">
                 <img src="assets/images/wisestudio-logo.png" alt="WiseStudio" class="me-2">WiseStudio
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -216,18 +216,18 @@
                 <div class="d-flex flex-wrap gap-3 justify-content-center my-4">
                     <!-- Healthcare -->
                     <a href="categories/doctors.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#2196F3; color:#fff;">🩺 Doctors & Clinics</a>
-                    <a href="alternative-health.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#4CAF50; color:#fff;">🌿 Alternative Health</a>
+                    <a href="categories/alternative-health.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#4CAF50; color:#fff;">🌿 Alternative Health</a>
                     <a href="categories/therapy-coaching.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#6610F2; color:#fff;">🛋️ Therapy & Coaching</a>
                     <a href="categories/wellness-coaches.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#b108b6; color:#fff;">🧘 Wellness Coaches</a>
                     
                     <!-- Fitness & Beauty -->
-                    <a href="fitness-trainers.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#FF6584; color:#fff;">💪 Fitness Trainers</a>
+                    <a href="categories/fitness-trainers.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#FF6584; color:#fff;">💪 Fitness Trainers</a>
                     <a href="categories/beauty-spa.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#20C997; color:#fff;">💇 Beauty & Spa</a>
                     
                     <!-- Education -->
-                    <a href="schools.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#8BC34A; color:#fff;">🏫 Schools</a>
+                    <a href="categories/schools.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#8BC34A; color:#fff;">🏫 Schools</a>
                     <a href="categories/colleges.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#3F51B5; color:#fff;">🏛️ Colleges</a>
-                    <a href="tuitions.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#00BCD4; color:#fff;">📚 Tuitions</a>
+                    <a href="categories/tuitions.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#00BCD4; color:#fff;">📚 Tuitions</a>
                     <a href="categories/creative-arts.html" class="badge rounded-pill px-4 py-2 text-decoration-none" style="background:#FFD600; color:#333;">🎨 Creative Arts</a>
                     
                     <!-- Professional -->
@@ -431,7 +431,7 @@
         <div class="container py-4">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h2 class="text-white section-title mb-4">About <a href="https://it.wisemount.in/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" style="border-bottom: 2px solid rgba(255,255,255,0.5); transition: border-bottom 0.3s ease;" onmouseover="this.style.borderBottom='2px solid white'" onmouseout="this.style.borderBottom='2px solid rgba(255,255,255,0.5)'"></a>WiseMount</a></h2>
+                    <h2 class="text-white section-title mb-4">About <a href="https://it.wisemount.in/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" style="border-bottom: 2px solid rgba(255,255,255,0.5); transition: border-bottom 0.3s ease;" onmouseover="this.style.borderBottom='2px solid white'" onmouseout="this.style.borderBottom='2px solid rgba(255,255,255,0.5)'">WiseMount</a></h2>
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <p class="lead text-white mb-0">
@@ -530,7 +530,7 @@
                     </th>
                     <th class="w3-padding w3-center w3-large w3-text-white" style="border: none; font-weight: 600; color: white !important;">
                       <div style="display: flex; flex-direction: column; align-items: center;">
-                        <strong style="margin-bottom: 8px; font-size: 16px; color: rgb(241, 38, 191) !important;">Plus Plan</strong>
+                        <strong style="margin-bottom: 8px; font-size: 16px; color: rgb(241, 38, 191) !important;">Elite Plan</strong>
                         <span class="w3-tag w3-green w3-text-white w3-small">₹4,999/month</span>
                       </div>
                     </th>
@@ -774,7 +774,7 @@
             </div>
             
             <div class="d-grid">
-              <a href="#payment" class="btn btn-primary btn-lg">Get Started Today</a>
+              <a href="#contact" class="btn btn-primary btn-lg">Get Started Today</a>
             </div>
           </div>
         </div>
@@ -1260,6 +1260,20 @@
     font-size: 13px;
   }
 }
+
+/* Non-clickable social link placeholder styles */
+.footer .social-links .social-link-placeholder {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+}
 </style>
 <!-- Contact Form Section -->
 
@@ -1610,7 +1624,7 @@
                         </div>
                     </form>
                     
-                    <p class="mt-4 small">By signing up, you agree to our <a href="#" class="text-white">Terms of Service</a> and <a href="#" class="text-white">Privacy Policy</a>.</p>
+                    <p class="mt-4 small">By signing up, you agree to our <span class="text-white-50">Terms of Service</span> and <span class="text-white-50">Privacy Policy</span>.</p>
                 </div>
             </div>
         </div>
@@ -1624,12 +1638,12 @@
                     <h5 class="fw-bold">
                         <img src="assets/images/wisestudio-logo.png" alt="WiseStudio" height="60" class="me-2">WiseStudio
                     </h5>
-                    <p class="mb-3">Streamline your business worldwide with tools to teach, manage, and grow their practice online. Perfect for healthcare, fitness, education, and professional services.</p>
+                    <p class="mb-3">All-in-one platform for managing classes, bookings, and payments across healthcare, fitness, education, and professional services worldwide.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <span class="social-link-placeholder" aria-label="Facebook"><i class="fab fa-facebook-f"></i></span>
+                        <span class="social-link-placeholder" aria-label="Twitter"><i class="fab fa-twitter"></i></span>
+                        <span class="social-link-placeholder" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="social-link-placeholder" aria-label="Instagram"><i class="fab fa-instagram"></i></span>
                     </div>
                 </div>
                 
@@ -1680,9 +1694,9 @@
                             </strong> Studio Management Platform
                         </p>
                         <div class="footer-links mt-3">
-                            <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
-                            <a href="#" class="text-decoration-none me-3">Terms of Service</a>
-                            <a href="#" class="text-decoration-none">Support</a>
+                            <span class="text-muted me-3">Privacy Policy</span>
+                            <span class="text-muted me-3">Terms of Service</span>
+                            <span class="text-muted">Support</span>
                         </div>
                     </div>
                 </div>
