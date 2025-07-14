@@ -190,7 +190,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center text-white">
                     <h2 class="hero-subtitle mb-4">One Platform. Every Sector. Instant Integration.</h2>
-                    <p class="lead mb-4">A Complete Booking & Payment Platform for All Service Professionals Serving Global Clients. <strong>Integrate into your website in just 15 minutes.</strong></p>
+                    <p class="lead mb-4">A Complete Booking & Payment Platform for All Service Professionals Serving Global Clients. <strong>Integrate into your website in just 30 Minutes.</strong></p>
                     
                     <div class="d-flex flex-wrap gap-2 justify-content-center text-center mb-4">
                         <span class="badge bg-light text-dark rounded-pill px-3 py-2">🩺 Healthcare</span>
@@ -2060,29 +2060,28 @@ document.getElementById('planForm').addEventListener('submit', function(e) {
     submitToGoogleForm();
     
     function submitToGoogleForm() {
-        // Prepare Google Form data
+        // Prepare Google Form data with new entry IDs
         const googleFormData = new FormData();
-        googleFormData.append('entry.1467493547', planData.name); // Name field
-        googleFormData.append('entry.1166414940', planData.mobile); // Mobile field
-        googleFormData.append('entry.1525215225', planData.email); // Email field
-        googleFormData.append('entry.740428189', planData.selectedPlan); // Plan field
-        googleFormData.append('entry.854738776', `Plan Selection - ${planData.timestamp}`); // Message field
+        googleFormData.append('entry.209009878', planData.name); // Name field
+        googleFormData.append('entry.1416071102', planData.mobile); // Mobile field
+        googleFormData.append('entry.493687854', planData.email); // Email field
+        googleFormData.append('entry.1152984009', planData.selectedPlan); // Selected Plan field
         
-        // Submit to Google Form
-        fetch('https://docs.google.com/forms/d/e/1FAIpQLSeQAJa6Vb_ZVDL5adWrc-xBDMGiEqNXQhuUKY5rkHyWdz_Kvw/formResponse', {
+        // Submit to Google Form with new URL
+        fetch('https://docs.google.com/forms/d/e/1FAIpQLSc1TpkZmYRIcV-i19uV3HBziLF7YCcj-b-YyIlMgWPcAOwKfQ/formResponse', {
             method: 'POST',
             body: googleFormData,
             mode: 'no-cors'
         })
         .then(() => {
             // Success - show confirmation
-            alert(`Thank you! Your request for ${planData.selectedPlan} has been submitted successfully. We'll contact you soon at ${planData.email} or ${planData.mobile}.`);
+            alert(`🎉 Thank you! Your request for ${planData.selectedPlan} has been submitted successfully. We'll contact you soon at ${planData.email} or ${planData.mobile}.`);
             closePlanForm();
         })
         .catch((error) => {
             console.error('Error:', error);
             // Even if there's an error, the form likely submitted successfully due to no-cors mode
-            alert(`Thank you! Your request for ${planData.selectedPlan} has been submitted. We'll contact you soon at ${planData.email} or ${planData.mobile}.`);
+            alert(`🎉 Thank you! Your request for ${planData.selectedPlan} has been submitted. We'll contact you soon at ${planData.email} or ${planData.mobile}.`);
             closePlanForm();
         })
         .finally(() => {
