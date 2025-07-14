@@ -608,7 +608,7 @@
                       <button onclick="showPlanForm('Pro')" class="w3-button w3-orange w3-text-white w3-hover-deep-orange w3-round-large" style="padding: 12px 20px; font-weight: 600; min-width: 120px;">Choose Pro</button>
                     </td>
                     <td class="w3-padding w3-center" style="background-color: #f8f9fa !important; border-top: 2px solid #9c27b0;">
-                      <button onclick="showPlanForm('Plus')" class="w3-button w3-green w3-text-white w3-hover-dark-green w3-round-large" style="padding: 12px 20px; font-weight: 600; min-width: 120px;">Choose Plus</button>
+                      <button onclick="showPlanForm('Plus')" class="w3-button w3-green w3-text-white w3-hover-dark-green w3-round-large" style="padding: 12px 20px; font-weight: 600; min-width: 120px;">Choose Elite</button>
                     </td>
                   </tr>
                 </tbody>
@@ -2022,66 +2022,54 @@ document.getElementById('planForm').addEventListener('submit', function(e) {
         source: 'WiseStudio Plan Selection'
     };
     
-    // Option 4: Test with webhook.site (for immediate testing)
-    // Go to https://webhook.site to get a unique URL for testing
-    /*
-    fetch('https://webhook.site/your-unique-id', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(planData)
-    })
-    .then(response => response.text())
-    .then(data => {
-        console.log('Webhook success:', data);
-        alert(`Thank you! Your request for ${planData.selectedPlan} has been submitted successfully.\n\nTimestamp: ${planData.timestamp}\nSource: ${planData.source}\n\n⚠️ This is a plan selection request - please prioritize this inquiry!`);
-        closePlanForm();
-    })
-    .catch((error) => {
-        console.error('Webhook error:', error);
-        // Fallback to Google Form
-        submitToGoogleForm();
-    })
-    .finally(() => {
-        // Re-enable submit button
+    // Validate required fields
+    if (!planData.name || !planData.mobile || !planData.email || !planData.selectedPlan) {
+        alert('Please fill in all required fields.');
         submitBtn.disabled = false;
         submitBtn.textContent = 'Submit Request';
-    });
-    */
+        return;
+    }
     
-    // For now, directly submit to Google Form
-    submitToGoogleForm();
+    // Submit to Google Form
+    submitToGoogleForm(planData, submitBtn);
     
-    function submitToGoogleForm() {
-        // Prepare Google Form data with new entry IDs
+    function submitToGoogleForm(data, button) {
+        // Prepare Google Form data with correct entry IDs
         const googleFormData = new FormData();
-        googleFormData.append('entry.209009878', planData.name); // Name field
-        googleFormData.append('entry.1416071102', planData.mobile); // Mobile field
-        googleFormData.append('entry.493687854', planData.email); // Email field
-        googleFormData.append('entry.1152984009', planData.selectedPlan); // Selected Plan field
+        googleFormData.append('entry.209009878', data.name); // Name field
+        googleFormData.append('entry.1416071102', data.mobile); // Mobile field
+        googleFormData.append('entry.493687854', data.email); // Email field
+        googleFormData.append('entry.1152984009', data.selectedPlan); // Selected Plan field
         
-        // Submit to Google Form with new URL
+        console.log('Submitting to Google Form:', {
+            name: data.name,
+            mobile: data.mobile,
+            email: data.email,
+            selectedPlan: data.selectedPlan
+        });
+        
+        // Submit to Google Form with correct URL
         fetch('https://docs.google.com/forms/d/e/1FAIpQLSc1TpkZmYRIcV-i19uV3HBziLF7YCcj-b-YyIlMgWPcAOwKfQ/formResponse', {
             method: 'POST',
             body: googleFormData,
             mode: 'no-cors'
         })
         .then(() => {
+            console.log('Google Form submission successful');
             // Success - show confirmation
-            alert(`🎉 Thank you! Your request for ${planData.selectedPlan} has been submitted successfully. We'll contact you soon at ${planData.email} or ${planData.mobile}.`);
+            alert(`🎉 Thank you! Your request for ${data.selectedPlan} has been submitted successfully. We'll contact you soon at ${data.email} or ${data.mobile}.`);
             closePlanForm();
         })
         .catch((error) => {
-            console.error('Error:', error);
+            console.error('Google Form submission error:', error);
             // Even if there's an error, the form likely submitted successfully due to no-cors mode
-            alert(`🎉 Thank you! Your request for ${planData.selectedPlan} has been submitted. We'll contact you soon at ${planData.email} or ${planData.mobile}.`);
+            alert(`🎉 Thank you! Your request for ${data.selectedPlan} has been submitted. We'll contact you soon at ${data.email} or ${data.mobile}.`);
             closePlanForm();
         })
         .finally(() => {
             // Re-enable submit button
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Submit Request';
+            button.disabled = false;
+            button.textContent = 'Submit Request';
         });
     }
 });
