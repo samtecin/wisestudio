@@ -1884,33 +1884,114 @@ document.getElementById('emailSignupForm').addEventListener('submit', function(e
     // Get email value
     const email = emailInput.value.trim();
     
-    // Prepare Google Form data
-    const formData = new FormData();
-    formData.append('entry.1129508155', email); // Email field entry ID
-    
-    // Submit to Google Form
-    fetch('https://docs.google.com/forms/d/e/1FAIpQLSeNldSk6w5hVcwhAHz9L8Wmfj7q-Lcnnl59rl0UMygjB8aU5g/formResponse', {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-    })
-    .then(() => {
-        // Success - show confirmation
-        alert(`🎉 Thank you for signing up!\n\nYour email "${email}" has been successfully registered for our free trial.\n\nWe'll send you access details and updates soon!`);
-        form.reset(); // Clear the form
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        // Even if there's an error, the form likely submitted successfully due to no-cors mode
-        alert(`🎉 Thank you for signing up!\n\nYour email "${email}" has been successfully registered for our free trial.\n\nWe'll send you access details and updates soon!`);
-        form.reset();
-    })
-    .finally(() => {
-        // Reset button state
+    // Enhanced validation
+    if (!email || !email.includes('@')) {
+        alert('Please enter a valid email address.');
         submitBtn.disabled = false;
         btnText.style.display = 'inline';
         loader.style.display = 'none';
-    });
+        return;
+    }
+    
+    console.log('🔍 Email Signup Form Debug Info:');
+    console.log('- Email entered:', email);
+    
+    // Try multiple Google Form configurations
+    const formConfigs = [
+        {
+            name: 'Primary Form',
+            url: 'https://docs.google.com/forms/d/e/1FAIpQLSfSi2m5RyPBORYVt-N0KOclzAU0dxIuGmX3F34boL__u1lXqg/formResponse',
+            entry: 'entry.1092541677'
+        },
+        {
+            name: 'Alternative Entry ID',
+            url: 'https://docs.google.com/forms/d/e/1FAIpQLSfSi2m5RyPBORYVt-N0KOclzAU0dxIuGmX3F34boL__u1lXqg/formResponse',
+            entry: 'entry.1129508155'
+        },
+        {
+            name: 'Contact Form ID (fallback)',
+            url: 'https://docs.google.com/forms/d/e/1FAIpQLSdVgWkPfYMxhEbNugRloqeozdHkMs0x83BvKoVzpLNJRtnI1A/formResponse',
+            entry: 'entry.1092541677'
+        }
+    ];
+    
+    let attemptCount = 0;
+    
+    function trySubmission(configIndex = 0) {
+        if (configIndex >= formConfigs.length) {
+            // All attempts failed, use mailto fallback
+            console.log('❌ All Google Form attempts failed, using mailto fallback');
+            const subject = encodeURIComponent('WiseStudio Free Trial Signup');
+            const body = encodeURIComponent(`Email: ${email}\n\nI would like to sign up for the WiseStudio free trial.`);
+            window.location.href = `mailto:wisestudioin@outlook.com?subject=${subject}&body=${body}`;
+            
+            alert(`📧 We'll contact you shortly!\n\nYour email "${email}" has been prepared for signup. An email has been composed for you - please send it to complete your free trial registration.`);
+            form.reset();
+            submitBtn.disabled = false;
+            btnText.style.display = 'inline';
+            loader.style.display = 'none';
+            return;
+        }
+        
+        const config = formConfigs[configIndex];
+        attemptCount++;
+        
+        console.log(`🚀 Attempt ${attemptCount} - ${config.name}:`);
+        console.log('- URL:', config.url);
+        console.log('- Entry:', config.entry);
+        
+        // Method 1: URLSearchParams
+        const params = new URLSearchParams();
+        params.append(config.entry, email);
+        
+        fetch(config.url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: params,
+            mode: 'no-cors'
+        })
+        .then(() => {
+            console.log(`✅ Success with ${config.name} (URLSearchParams)`);
+            alert(`🎉 Thank you for signing up!\n\nYour email "${email}" has been successfully registered for our free trial.\n\nWe'll send you access details and updates soon!`);
+            form.reset();
+        })
+        .catch((error) => {
+            console.log(`❌ ${config.name} failed:`, error);
+            
+            // Try FormData method as backup
+            const formData = new FormData();
+            formData.append(config.entry, email);
+            
+            return fetch(config.url, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            })
+            .then(() => {
+                console.log(`✅ Success with ${config.name} (FormData)`);
+                alert(`🎉 Thank you for signing up!\n\nYour email "${email}" has been successfully registered for our free trial.\n\nWe'll send you access details and updates soon!`);
+                form.reset();
+            })
+            .catch((formDataError) => {
+                console.log(`❌ ${config.name} FormData also failed:`, formDataError);
+                // Try next configuration
+                setTimeout(() => trySubmission(configIndex + 1), 100);
+            });
+        })
+        .finally(() => {
+            if (configIndex === 0) {
+                // Only reset button state after first successful submission or all attempts
+                submitBtn.disabled = false;
+                btnText.style.display = 'inline';
+                loader.style.display = 'none';
+            }
+        });
+    }
+    
+    // Start the submission attempts
+    trySubmission(0);
 });
 </script>
 
