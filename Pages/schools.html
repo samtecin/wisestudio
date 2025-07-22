@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseStudio for Schools – Smart Management Platform for Educational Institutions</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/wisestudio-logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-1" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); border-bottom: 1px solid rgba(255,255,255,0.1); min-height: 40px;">
+        <div class="container-fluid">
+            <!-- All content aligned to the right -->
+            <div class="ms-auto">
+                <div class="d-flex align-items-center gap-2">
+                    <!-- Contact Icons -->
+                    <a href="mailto:wisestudioin@outlook.com"
+                       class="topnav-link email-link"
+                       title="Send us an email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                    
+                    <a href="tel:+918939677189"
+                       class="topnav-link phone-link"
+                       title="Call us">
+                        <i class="bi bi-telephone"></i>
+                    </a>
+                    
+                    <!-- Engagement Links -->
+                    <a href="https://wa.me/918939677189?text=Hi%20WiseMount%2C%20I%20am%20reaching%20out%20from%20your%20website%20to%20learn%20more%20about%20your%20services."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="topnav-link whatsapp-link"
+                       title="Chat with us on WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    
+                    <!-- Separator -->
+                    <div class="topnav-separator"></div>
+                    
+                    <!-- Social Media Icons -->
+                    <a href="https://www.linkedin.com/company/wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link linkedin-link"
+                       aria-label="LinkedIn" 
+                       title="Follow us on LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://twitter.com/wisemounthq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link twitter-link"
+                       aria-label="Twitter" 
+                       title="Follow us on Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link facebook-link"
+                       aria-label="Facebook" 
+                       title="Like us on Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link youtube-link"
+                       aria-label="YouTube" 
+                       title="Subscribe to our YouTube channel">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/wmhq1" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link instagram-link"
+                       aria-label="Instagram" 
+                       title="Follow us on Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    
+                    <a href="https://www.pinterest.com/wmhq1" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link pinterest-link"
+                       aria-label="Pinterest" 
+                       title="Follow us on Pinterest">
+                        <i class="bi bi-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: linear-gradient(135deg, #b108b6 0%, #6610F2 100%) !important;">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/wisestudio-logo.png" alt="WiseStudio" height="40" class="me-2">
+                <span class="fw-bold">WiseStudio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#how-it-works">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="../index.html#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #6610F2 0%, #b108b6 100%);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-4 fw-bold text-white mb-4">WiseStudio for Schools</h1>
+                    <p class="lead text-white mb-5">Smart Management Platform for Educational Institutions</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="bg-white rounded-4 p-4 shadow">
+                                <h3 class="text-primary mb-3">🏫 Streamline Your Educational Management</h3>
+                                <p class="text-muted">From student enrollment to class scheduling—manage everything in one centralized platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Introduction -->
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold mb-4">How WiseStudio Helps Schools and Educational Institutions</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="lead text-muted">WiseStudio is an all-in-one smart management platform built especially for schools, colleges, educational institutions, and training centers. Whether you're managing academic courses, extracurricular activities, skill development programs, or professional training—WiseStudio helps you manage everything from student enrollment to fee collection in one place.</p>
+                                <div class="bg-light rounded-4 p-4 mt-4">
+                                    <p class="mb-0 fw-medium">It's like having a comprehensive digital administration system that handles your student records, class schedules, teacher management, fee collection, and reports—so you can focus on what matters most: <strong>quality education!</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="mb-5">
+                        <h2 class="text-center mb-5">✅ What Can WiseStudio Do for Your School?</h2>
+                        
+                        <div class="row g-4">
+                            <!-- Feature 1 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-calendar-alt fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">1. Academic Scheduling & Timetable Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Create and manage comprehensive class timetables with an intuitive calendar interface</li>
+                                            <li class="mb-2">✓ Coordinate multiple subjects, teachers, and classrooms across different grades and sections</li>
+                                            <li class="mb-0">✓ Automated notifications for schedule changes, exam dates, and important academic events</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-success text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-video fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">2. Hybrid Learning Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><strong>Online Classes:</strong> Seamless integration with Zoom or Google Meet for virtual learning sessions without technical complexity</li>
+                                            <li class="mb-0"><strong>Physical Classes:</strong> Manage in-person sessions, laboratory classes, and practical workshops with attendance tracking and resource allocation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-info text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-globe fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">3. School Website & Parent Portal</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Integrate WiseStudio into your school website in under 30 minutes</li>
+                                            <li class="mb-2">✓ Complete white-label solution with your school's branding, logo, and colors</li>
+                                            <li class="mb-0">✓ Parents can track student progress, pay fees, and communicate with teachers from your official portal</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-warning text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-user-graduate fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">4. Comprehensive Student Information System</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Complete student profiles with academic records, attendance, grades, and parent contact information</li>
+                                            <li class="mb-0">✓ Track individual student progress, behavior records, and achievement milestones</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 5 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-secondary text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-chalkboard-teacher fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">5. Faculty & Staff Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Assign subjects, classes, and administrative responsibilities to teaching staff</li>
+                                            <li class="mb-0">✓ Manage substitute teachers, support staff, and department coordinators efficiently</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 6 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-dark text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-ticket-alt fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">6. Flexible Fee Structure & Payment Plans</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Create diverse fee structures—annual fees, semester payments, monthly installments, or custom plans</li>
+                                            <li class="mb-0">✓ Automated fee reminder system with grace period management and penalty calculations</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 7 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-danger text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-rupee-sign fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">7. Digital Fee Collection & Financial Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Secure online fee collection with multiple payment options including UPI, cards, and net banking</li>
+                                            <li class="mb-2">✓ Instant payment confirmations and digital receipts for parents</li>
+                                            <li class="mb-0">✓ <strong>Zero transaction fees or commissions—100% of fees collected go directly to your school account</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 8 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-purple text-white rounded-circle p-3 me-3" style="background-color: #6f42c1;">
+                                                <i class="fas fa-shield-alt fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">8. Transparent Financial Model</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ No hidden charges or revenue sharing—simple subscription-based pricing</li>
+                                            <li class="mb-2">✓ Complete feature access with all modules included in your chosen plan</li>
+                                            <li class="mb-0">✓ Ideal for educational institutions wanting full financial control and transparency</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 9 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-teal text-white rounded-circle p-3 me-3" style="background-color: #20c997;">
+                                                <i class="fas fa-building fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">9. Multi-Campus & Department Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Manage multiple school branches or campuses from a single administrative dashboard</li>
+                                            <li class="mb-0">✓ Department-wise performance tracking and resource allocation across different academic divisions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 10 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-orange text-white rounded-circle p-3 me-3" style="background-color: #fd7e14;">
+                                                <i class="fas fa-chart-line fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">10. Academic Analytics & Performance Reports</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Comprehensive reports on student performance, attendance patterns, fee collection status, and teacher effectiveness</li>
+                                            <li class="mb-0">✓ Data-driven insights to improve academic outcomes and operational efficiency</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Use Case Section -->
+                    <div class="bg-light rounded-4 p-5 mb-5">
+                        <h2 class="text-center mb-4">💡 WiseStudio in Action: School Management Scenario</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="mb-3">Imagine you're managing a school with 500+ students across multiple grades offering both regular curriculum and extracurricular activities.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">📚 Students are enrolled in different grades with various subject combinations</li>
+                                    <li class="mb-2">👩‍🏫 You have 25+ teachers managing different subjects and grade levels</li>
+                                    <li class="mb-2">💳 Parents pay fees online with automated receipt generation and reminder systems</li>
+                                    <li class="mb-2">🌐 All school information, announcements, and student progress are accessible through your branded portal</li>
+                                    <li class="mb-2">🎭 Extracurricular activities and special events are managed using the event management feature</li>
+                                    <li class="mb-2">✅ Teachers track attendance, upload assignments, grades, and communicate with parents seamlessly</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <p class="fw-bold text-primary">All educational operations are coordinated through WiseStudio—accessible from any device, anywhere, anytime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Choose Section -->
+                    <div class="mb-5">
+                        <h2 class="text-center mb-5">🎯 Why WiseStudio is Perfect for Schools</h2>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-success text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-clock fa-2x"></i>
+                                    </div>
+                                    <h5>Administrative Efficiency</h5>
+                                    <p>Eliminate paperwork and manual processes with comprehensive digital automation</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-primary text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-users fa-2x"></i>
+                                    </div>
+                                    <h5>Parent Engagement</h5>
+                                    <p>Enhanced communication between school, teachers, students, and parents</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-info text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-graduation-cap fa-2x"></i>
+                                    </div>
+                                    <h5>Academic Excellence</h5>
+                                    <p>Data-driven insights help improve teaching methods and student outcomes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-warning text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-percent fa-2x"></i>
+                                    </div>
+                                    <h5>Complete Revenue Retention</h5>
+                                    <p>Zero commission or transaction fees. Keep 100% of all collected fees</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-secondary text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-mobile-alt fa-2x"></i>
+                                    </div>
+                                    <h5>Mobile-Friendly Platform</h5>
+                                    <p>Access all features from smartphones, tablets, or computers</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-danger text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-headset fa-2x"></i>
+                                    </div>
+                                    <h5>Dedicated Education Support</h5>
+                                    <p>Specialized support team understanding educational institution needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Who Can Use Section -->
+                    <div class="bg-primary text-white rounded-4 p-5 mb-5">
+                        <h2 class="text-center mb-4">🌟 Perfect for These Educational Institutions</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <ul class="list-unstyled text-center">
+                                    <li class="mb-3">🏫 K-12 Schools (Primary, Middle, High Schools)</li>
+                                    <li class="mb-3">🎓 Colleges and Universities</li>
+                                    <li class="mb-3">📚 Educational Training Centers and Institutes</li>
+                                    <li class="mb-3">🎨 Skill Development and Vocational Training Centers</li>
+                                    <li class="mb-0">🏢 Multi-campus Educational Organizations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="text-center">
+                        <h2 class="mb-4">WiseStudio: Your Complete Educational Management Partner</h2>
+                        <p class="lead mb-4">Transform your educational institution with smart automation, enhanced parent engagement, and comprehensive academic management—all while maintaining complete control over your finances and branding.</p>
+                        <a href="../index.html#signup" class="btn btn-primary btn-lg px-5">Start Your Educational Transformation</a>
+                        <p class="mt-3 text-muted">Ready to modernize your school? Choose the plan that fits your institution size and let WiseStudio handle the complexity of educational administration!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 60px 0 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">
+                        <img src="../assets/images/wisestudio-logo.png" alt="WiseStudio" height="60" class="me-2">WiseStudio
+                    </h5>
+                    <p class="mb-3">All-in-one platform for managing classes, bookings, and payments across healthcare, fitness, education, and professional services worldwide.</p>
+                    <div class="social-links">
+                        <span class="social-link-placeholder" aria-label="Facebook"><i class="fab fa-facebook-f"></i></span>
+                        <span class="social-link-placeholder" aria-label="Twitter"><i class="fab fa-twitter"></i></span>
+                        <span class="social-link-placeholder" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="social-link-placeholder" aria-label="Instagram"><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <div class="contact-info">
+                        <p class="mb-2"><strong><a href="https://it.wisemount.in/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none" style="border-bottom: 1px solid rgba(255,255,255,0.3); transition: border-bottom 0.3s ease;" onmouseover="this.style.borderBottom='1px solid white'" onmouseout="this.style.borderBottom='1px solid rgba(255,255,255,0.3)'">WiseMount Pvt Ltd</a></strong></p>
+                        <p class="mb-2">247/12-1 A, Railway Extension Road,<br>Tenkasi-627811, Tamil Nadu, India</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i>wisestudioin@outlook.com</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i>+91 8939677189</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Healthcare & Wellness</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="doctors.html" class="text-light text-decoration-none">Doctors & Clinics</a></li>
+                        <li><a href="alternative-health.html" class="text-light text-decoration-none">Alternative Health</a></li>
+                        <li><a href="therapy-coaching.html" class="text-light text-decoration-none">Therapy & Coaching</a></li>
+                        <li><a href="wellness-coaches.html" class="text-light text-decoration-none">Wellness Coaches</a></li>
+                        <li><a href="fitness-trainers.html" class="text-light text-decoration-none">Fitness Trainers</a></li>
+                        <li><a href="beauty-spa.html" class="text-light text-decoration-none">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Education & Professional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="schools.html" class="text-light text-decoration-none">Schools</a></li>
+                        <li><a href="colleges.html" class="text-light text-decoration-none">Colleges</a></li>
+                        <li><a href="tuitions.html" class="text-light text-decoration-none">Tuitions</a></li>
+                        <li><a href="creative-arts.html" class="text-light text-decoration-none">Creative Arts</a></li>
+                        <li><a href="advocates.html" class="text-light text-decoration-none">Advocates</a></li>
+                        <li><a href="events.html" class="text-light text-decoration-none">Events & Workshops</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="text-center">
+                        <p class="mb-1">&copy; 2025 WiseStudio. All rights reserved.</p>
+                        <p class="mb-2">
+                            Powered by <strong>
+                                <a href="https://www.businesstechlabs.com/" target="_blank" style="color: #87CEEB; text-decoration: none;">BusinessTechLabs</a>
+                            </strong> Studio Management Platform
+                        </p>
+                        <div class="footer-links mt-3">
+                            <span class="text-muted me-3">Privacy Policy</span>
+                            <span class="text-muted me-3">Terms of Service</span>
+                            <span class="text-muted">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CSS Styles from index.html -->
+    <style>
+    /* Top Navigation Bar Styles */
+    .topnav-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      padding: 6px 8px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+    }
+
+    .topnav-link:hover {
+      transform: scale(1.1);
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Contact Icons */
+    .email-link {
+      color: #FFC107 !important;
+    }
+
+    .email-link:hover {
+      background-color: rgba(255, 193, 7, 0.15);
+      color: #FFC107 !important;
+    }
+
+    .phone-link {
+      color: #17A2B8 !important;
+    }
+
+    .phone-link:hover {
+      background-color: rgba(23, 162, 184, 0.15);
+      color: #17A2B8 !important;
+    }
+
+    /* Engagement Links */
+    .whatsapp-link {
+      color: #25D366 !important;
+    }
+
+    .whatsapp-link:hover {
+      background-color: rgba(37, 211, 102, 0.15);
+      color: #25D366 !important;
+    }
+
+    /* Social Media Links */
+    .social-link {
+      font-size: 13px !important;
+      padding: 4px 6px !important;
+      border-radius: 3px !important;
+      min-width: 24px !important;
+      height: 24px !important;
+    }
+
+    .linkedin-link {
+      color: #0077B5 !important;
+    }
+
+    .linkedin-link:hover {
+      background-color: rgba(0, 119, 181, 0.15);
+      color: #0077B5 !important;
+    }
+
+    .twitter-link {
+      color: #1DA1F2 !important;
+    }
+
+    .twitter-link:hover {
+      background-color: rgba(29, 161, 242, 0.15);
+      color: #1DA1F2 !important;
+    }
+
+    .facebook-link {
+      color: #1877F2 !important;
+    }
+
+    .facebook-link:hover {
+      background-color: rgba(24, 119, 242, 0.15);
+      color: #1877F2 !important;
+    }
+
+    .youtube-link {
+      color: #FF0000 !important;
+    }
+
+    .youtube-link:hover {
+      background-color: rgba(255, 0, 0, 0.15);
+      color: #FF0000 !important;
+    }
+
+    .instagram-link {
+      color: #E4405F !important;
+    }
+
+    .instagram-link:hover {
+      background-color: rgba(228, 64, 95, 0.15);
+      color: #E4405F !important;
+    }
+
+    .pinterest-link {
+      color: #BD081C !important;
+    }
+
+    .pinterest-link:hover {
+      background-color: rgba(189, 8, 28, 0.15);
+      color: #BD081C !important;
+    }
+
+    /* Separator */
+    .topnav-separator {
+      width: 1px;
+      height: 18px;
+      background-color: rgba(255, 255, 255, 0.3);
+      margin: 0 8px;
+    }
+
+    /* Additional Navigation Styling for Better Visibility */
+    .navbar {
+      z-index: 1050;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 500;
+      padding: 0.75rem 1rem !important;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #fff !important;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+    }
+
+    .navbar-toggler {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    }
+
+    /* Footer social placeholders */
+    .footer .social-links .social-link-placeholder {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      color: rgba(255, 255, 255, 0.5);
+      cursor: default;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .topnav-link {
+        font-size: 12px;
+        padding: 4px 6px;
+        min-width: 24px;
+        height: 24px;
+      }
+      
+      .social-link {
+        font-size: 11px !important;
+        padding: 3px 4px !important;
+        min-width: 20px !important;
+        height: 20px !important;
+      }
+      
+      .topnav-separator {
+        height: 14px;
+        margin: 0 4px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .topnav-link {
+        font-size: 11px;
+        padding: 3px 4px;
+        min-width: 20px;
+        height: 20px;
+      }
+      
+      .social-link {
+        font-size: 10px !important;
+        padding: 2px 3px !important;
+        min-width: 18px !important;
+        height: 18px !important;
+      }
+      
+      .topnav-separator {
+        height: 12px;
+        margin: 0 2px;
+      }
+    }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseStudio for Alternative Health – Smart Holistic Practice Management Platform</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/wisestudio-logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-1" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); border-bottom: 1px solid rgba(255,255,255,0.1); min-height: 40px;">
+        <div class="container-fluid">
+            <!-- All content aligned to the right -->
+            <div class="ms-auto">
+                <div class="d-flex align-items-center gap-2">
+                    <!-- Contact Icons -->
+                    <a href="mailto:wisestudioin@outlook.com"
+                       class="topnav-link email-link"
+                       title="Send us an email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                    
+                    <a href="tel:+918939677189"
+                       class="topnav-link phone-link"
+                       title="Call us">
+                        <i class="bi bi-telephone"></i>
+                    </a>
+                    
+                    <!-- Engagement Links -->
+                    <a href="https://wa.me/918939677189?text=Hi%20WiseMount%2C%20I%20am%20reaching%20out%20from%20your%20website%20to%20learn%20more%20about%20your%20services."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="topnav-link whatsapp-link"
+                       title="Chat with us on WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    
+                    <!-- Separator -->
+                    <div class="topnav-separator"></div>
+                    
+                    <!-- Social Media Icons -->
+                    <a href="https://www.linkedin.com/company/wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link linkedin-link"
+                       aria-label="LinkedIn" 
+                       title="Follow us on LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://twitter.com/wisemounthq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link twitter-link"
+                       aria-label="Twitter" 
+                       title="Follow us on Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link facebook-link"
+                       aria-label="Facebook" 
+                       title="Like us on Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link youtube-link"
+                       aria-label="YouTube" 
+                       title="Subscribe to our YouTube channel">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/wmhq1" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link instagram-link"
+                       aria-label="Instagram" 
+                       title="Follow us on Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    
+                    <a href="https://www.pinterest.com/wmhq1" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link pinterest-link"
+                       aria-label="Pinterest" 
+                       title="Follow us on Pinterest">
+                        <i class="bi bi-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: linear-gradient(135deg, #b108b6 0%, #6610F2 100%) !important;">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/wisestudio-logo.png" alt="WiseStudio" height="40" class="me-2">
+                <span class="fw-bold">WiseStudio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#how-it-works">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="../index.html#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #6610F2 0%, #b108b6 100%);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-4 fw-bold text-white mb-4">WiseStudio for Alternative Health</h1>
+                    <p class="lead text-white mb-5">Smart Holistic Practice Management Platform for Alternative Medicine Practitioners</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="bg-white rounded-4 p-4 shadow">
+                                <h3 class="text-primary mb-3">🌿 Transform Your Holistic Practice</h3>
+                                <p class="text-muted">From patient consultations to treatment tracking—manage everything naturally in one integrated platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Introduction -->
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold mb-4">How WiseStudio Empowers Alternative Health Practitioners</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="lead text-muted">WiseStudio is an all-in-one, smart management platform built especially for alternative medicine practitioners, holistic healers, and natural health professionals. Whether you practice acupuncture, herbal medicine, homeopathy, naturopathy, Ayurveda, Traditional Chinese Medicine, or any other alternative healing modality, WiseStudio helps you simplify everything from patient consultations to treatment planning—so you can devote more time to your patients' natural healing journey.</p>
+                                <div class="bg-light rounded-4 p-4 mt-4">
+                                    <p class="mb-0 fw-medium">It functions like a digital assistant, managing your consultations, patient records, treatment protocols, herbal prescriptions, and more, all in one holistic platform designed for natural healing practices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="mb-5">
+                        <h2 class="text-center mb-5">🌱 What Can WiseStudio Do for Your Alternative Health Practice?</h2>
+                        
+                        <div class="row g-4">
+                            <!-- Feature 1 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-calendar-check fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">1. Effortless Consultation Scheduling</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Plan and manage all patient consultations—initial assessments, follow-ups, and treatment sessions—using a single, intuitive calendar</li>
+                                            <li class="mb-2">✓ Schedule multiple practitioners and treatment modalities across one or more clinic locations from one dashboard</li>
+                                            <li class="mb-0">✓ Send automatic appointment reminders to patients to reduce no-shows and maintain treatment continuity</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-success text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-video fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">2. Remote & In-Person Healing Sessions</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><strong>Remote Consultations:</strong> Integrate directly with Zoom or Google Meet to conduct virtual healing sessions, nutritional counseling, or lifestyle coaching without any technical hassle</li>
+                                            <li class="mb-0"><strong>In-Person Treatments:</strong> Manage clinic visits, healing workshops, or group therapy sessions with proper registration, participant limits, and attendance tracking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-info text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-globe fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">3. Holistic Website Integration</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Integrate WiseStudio into your practice website in less than 30 minutes</li>
+                                            <li class="mb-2">✓ Brand it with your practice name and logo—no WiseStudio branding appears (white-label supported)</li>
+                                            <li class="mb-0">✓ Patients can book consultations, access treatment plans, and make payments from your professional website</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-warning text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-user-circle fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">4. Comprehensive Patient Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Maintain detailed records of every patient—including health history, constitutional assessments, herbal prescriptions, dietary recommendations, payments, and treatment progress</li>
+                                            <li class="mb-0">✓ Easily track patient response to treatments, healing patterns, and follow-up requirements for each individual's unique healing journey</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 5 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-secondary text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-users-cog fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">5. Multi-Practitioner and Staff Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Assign treatment modalities and time slots to specific practitioners or healing specialists</li>
+                                            <li class="mb-0">✓ Easily add administrative staff, assistants, or visiting healers when needed</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 6 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-dark text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-leaf fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">6. Treatment Protocols and Healing Packages</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Offer patients flexible healing packages—monthly wellness plans, seasonal detox programs, constitutional treatments, or custom healing durations</li>
+                                            <li class="mb-0">✓ The software auto-tracks when treatment protocols start, end, or need adjustment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 7 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-danger text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-rupee-sign fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">7. Secure Payment Collection & UPI Enabled</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Collect consultation fees and treatment payments digitally—no manual tracking or payment chasing needed</li>
+                                            <li class="mb-2">✓ UPI-enabled, so payments from patients go directly to your designated practice bank account</li>
+                                            <li class="mb-0">✓ <strong>WiseStudio never charges any commission or fee per transaction—you receive 100% of your earnings, always</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 8 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-purple text-white rounded-circle p-3 me-3" style="background-color: #6f42c1;">
+                                                <i class="fas fa-shield-alt fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">8. Privacy-Compliant, Commission-Free Model</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ All patient data is stored securely with healthcare industry-standard privacy protections</li>
+                                            <li class="mb-2">✓ Simply choose a subscription plan, and that's it! All features are included with no hidden fees</li>
+                                            <li class="mb-0">✓ Perfect for solo practitioners to large integrative medicine centers who want full control over their revenue</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 9 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-teal text-white rounded-circle p-3 me-3" style="background-color: #20c997;">
+                                                <i class="fas fa-clinic-medical fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">9. Multi-Clinic and Multi-Modality Support</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Operate multiple practice locations or offer various healing modalities—manage all of it centrally</li>
+                                            <li class="mb-0">✓ Track patient flow, practitioner performance, and revenue for each clinic, treatment type, or healer</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 10 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-orange text-white rounded-circle p-3 me-3" style="background-color: #fd7e14;">
+                                                <i class="fas fa-chart-line fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">10. Healing Analytics and Practice Insights</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Instantly access insights into patient engagement, most effective treatments, seasonal health patterns, and overall practice growth</li>
+                                            <li class="mb-0">✓ Use this data to optimize treatment protocols, plan wellness campaigns, or adjust your healing offerings</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Use Case Section -->
+                    <div class="bg-light rounded-4 p-5 mb-5">
+                        <h2 class="text-center mb-4">🌿 Real-World Use Case: WiseStudio for an Alternative Health Practice</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="mb-3">Imagine you run an integrative health practice offering acupuncture, herbal medicine, nutritional counseling, and Ayurvedic treatments.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">🌱 Patients book appointments for different healing modalities, both individual consultations and comprehensive wellness programs</li>
+                                    <li class="mb-2">🍃 You have 4 practitioners handling different specialties—acupuncture, herbal medicine, nutrition, and Ayurveda</li>
+                                    <li class="mb-2">💳 You now collect consultation fees online and instantly see payment status for each appointment</li>
+                                    <li class="mb-2">🌐 You publish your treatment menu and availability on your practice website (with your branding)</li>
+                                    <li class="mb-2">🎪 You run weekend wellness workshops or seasonal detox programs using the event feature</li>
+                                    <li class="mb-2">✅ All practitioners manage their patient records, treatment protocols, and herbal prescriptions efficiently through the platform</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <p class="fw-bold text-primary">All of this is managed through WiseStudio—from one secure dashboard, accessible on your laptop, tablet, or even your phone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Choose Section -->
+                    <div class="mb-5">
+                        <h2 class="text-center mb-5">🌟 Why WiseStudio is the Smart Choice for Alternative Health</h2>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-success text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-clock fa-2x"></i>
+                                    </div>
+                                    <h5>Saves Time</h5>
+                                    <p>No paperwork or manual scheduling, just natural automation</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-primary text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-smile fa-2x"></i>
+                                    </div>
+                                    <h5>User-Friendly</h5>
+                                    <p>Easy enough for practitioners, staff, and even patients to use</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-info text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-chart-line fa-2x"></i>
+                                    </div>
+                                    <h5>Helps You Grow</h5>
+                                    <p>With better insights and smoother operations, you can expand your practice easily</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-warning text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-percent fa-2x"></i>
+                                    </div>
+                                    <h5>100% Earnings</h5>
+                                    <p>No commission, no transaction cuts. You keep every rupee you earn</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-secondary text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-rocket fa-2x"></i>
+                                    </div>
+                                    <h5>Quick Website Setup</h5>
+                                    <p>Establish your professional online presence in under 30 minutes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-danger text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-headset fa-2x"></i>
+                                    </div>
+                                    <h5>Reliable Support Team</h5>
+                                    <p>Always available to help you when needed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Who Can Use Section -->
+                    <div class="bg-primary text-white rounded-4 p-5 mb-5">
+                        <h2 class="text-center mb-4">🌿 Who Can Benefit from WiseStudio?</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <ul class="list-unstyled text-center">
+                                    <li class="mb-3">🍃 Acupuncturists and Traditional Chinese Medicine Practitioners</li>
+                                    <li class="mb-3">🌱 Herbalists and Naturopathic Doctors</li>
+                                    <li class="mb-3">💆‍♀️ Homeopaths and Ayurvedic Practitioners</li>
+                                    <li class="mb-3">🧘‍♀️ Nutritional Therapists and Holistic Health Coaches</li>
+                                    <li class="mb-0">🏢 Integrative Medicine Centers and Alternative Health Clinics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="text-center">
+                        <h2 class="mb-4">WiseStudio isn't just software—it's your behind-the-scenes healing partner.</h2>
+                        <p class="lead mb-4">It takes care of everything you don't want to worry about—so you can focus 100% on patient care, delivering exceptional healing services, and growing your alternative health practice with confidence and natural flow.</p>
+                        <a href="../index.html#signup" class="btn btn-primary btn-lg px-5">Get Started with WiseStudio</a>
+                        <p class="mt-3 text-muted">Ready to transform your holistic practice? Get started with WiseStudio, pick a plan that fits your needs—and leave the rest to natural automation!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 60px 0 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">
+                        <img src="../assets/images/wisestudio-logo.png" alt="WiseStudio" height="60" class="me-2">WiseStudio
+                    </h5>
+                    <p class="mb-3">All-in-one platform for managing classes, bookings, and payments across healthcare, fitness, education, and professional services worldwide.</p>
+                    <div class="social-links">
+                        <span class="social-link-placeholder" aria-label="Facebook"><i class="fab fa-facebook-f"></i></span>
+                        <span class="social-link-placeholder" aria-label="Twitter"><i class="fab fa-twitter"></i></span>
+                        <span class="social-link-placeholder" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="social-link-placeholder" aria-label="Instagram"><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <div class="contact-info">
+                        <p class="mb-2"><strong><a href="https://it.wisemount.in/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none" style="border-bottom: 1px solid rgba(255,255,255,0.3); transition: border-bottom 0.3s ease;" onmouseover="this.style.borderBottom='1px solid white'" onmouseout="this.style.borderBottom='1px solid rgba(255,255,255,0.3)'">WiseMount Pvt Ltd</a></strong></p>
+                        <p class="mb-2">247/12-1 A, Railway Extension Road,<br>Tenkasi-627811, Tamil Nadu, India</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i>wisestudioin@outlook.com</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i>+91 8939677189</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Healthcare & Wellness</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="doctors.html" class="text-light text-decoration-none">Doctors & Clinics</a></li>
+                        <li><a href="alternative-health.html" class="text-light text-decoration-none">Alternative Health</a></li>
+                        <li><a href="therapy-coaching.html" class="text-light text-decoration-none">Therapy & Coaching</a></li>
+                        <li><a href="wellness-coaches.html" class="text-light text-decoration-none">Wellness Coaches</a></li>
+                        <li><a href="fitness-trainers.html" class="text-light text-decoration-none">Fitness Trainers</a></li>
+                        <li><a href="beauty-spa.html" class="text-light text-decoration-none">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Education & Professional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="schools.html" class="text-light text-decoration-none">Schools</a></li>
+                        <li><a href="colleges.html" class="text-light text-decoration-none">Colleges</a></li>
+                        <li><a href="tuitions.html" class="text-light text-decoration-none">Tuitions</a></li>
+                        <li><a href="creative-arts.html" class="text-light text-decoration-none">Creative Arts</a></li>
+                        <li><a href="advocates.html" class="text-light text-decoration-none">Advocates</a></li>
+                        <li><a href="events.html" class="text-light text-decoration-none">Events & Workshops</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="text-center">
+                        <p class="mb-1">&copy; 2025 WiseStudio. All rights reserved.</p>
+                        <p class="mb-2">
+                            Powered by <strong>
+                                <a href="https://www.businesstechlabs.com/" target="_blank" style="color: #87CEEB; text-decoration: none;">BusinessTechLabs</a>
+                            </strong> Studio Management Platform
+                        </p>
+                        <div class="footer-links mt-3">
+                            <span class="text-muted me-3">Privacy Policy</span>
+                            <span class="text-muted me-3">Terms of Service</span>
+                            <span class="text-muted">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CSS Styles from index.html -->
+    <style>
+    /* Top Navigation Bar Styles */
+    .topnav-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      padding: 6px 8px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+    }
+
+    .topnav-link:hover {
+      transform: scale(1.1);
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Contact Icons */
+    .email-link {
+      color: #FFC107 !important;
+    }
+
+    .email-link:hover {
+      background-color: rgba(255, 193, 7, 0.15);
+      color: #FFC107 !important;
+    }
+
+    .phone-link {
+      color: #17A2B8 !important;
+    }
+
+    .phone-link:hover {
+      background-color: rgba(23, 162, 184, 0.15);
+      color: #17A2B8 !important;
+    }
+
+    /* Engagement Links */
+    .whatsapp-link {
+      color: #25D366 !important;
+    }
+
+    .whatsapp-link:hover {
+      background-color: rgba(37, 211, 102, 0.15);
+      color: #25D366 !important;
+    }
+
+    /* Social Media Links */
+    .social-link {
+      font-size: 13px !important;
+      padding: 4px 6px !important;
+      border-radius: 3px !important;
+      min-width: 24px !important;
+      height: 24px !important;
+    }
+
+    .linkedin-link {
+      color: #0077B5 !important;
+    }
+
+    .linkedin-link:hover {
+      background-color: rgba(0, 119, 181, 0.15);
+      color: #0077B5 !important;
+    }
+
+    .twitter-link {
+      color: #1DA1F2 !important;
+    }
+
+    .twitter-link:hover {
+      background-color: rgba(29, 161, 242, 0.15);
+      color: #1DA1F2 !important;
+    }
+
+    .facebook-link {
+      color: #1877F2 !important;
+    }
+
+    .facebook-link:hover {
+      background-color: rgba(24, 119, 242, 0.15);
+      color: #1877F2 !important;
+    }
+
+    .youtube-link {
+      color: #FF0000 !important;
+    }
+
+    .youtube-link:hover {
+      background-color: rgba(255, 0, 0, 0.15);
+      color: #FF0000 !important;
+    }
+
+    .instagram-link {
+      color: #E4405F !important;
+    }
+
+    .instagram-link:hover {
+      background-color: rgba(228, 64, 95, 0.15);
+      color: #E4405F !important;
+    }
+
+    .pinterest-link {
+      color: #BD081C !important;
+    }
+
+    .pinterest-link:hover {
+      background-color: rgba(189, 8, 28, 0.15);
+      color: #BD081C !important;
+    }
+
+    /* Separator */
+    .topnav-separator {
+      width: 1px;
+      height: 18px;
+      background-color: rgba(255, 255, 255, 0.3);
+      margin: 0 8px;
+    }
+
+    /* Additional Navigation Styling for Better Visibility */
+    .navbar {
+      z-index: 1050;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 500;
+      padding: 0.75rem 1rem !important;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #fff !important;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+    }
+
+    .navbar-toggler {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    }
+
+    /* Footer social placeholders */
+    .footer .social-links .social-link-placeholder {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      color: rgba(255, 255, 255, 0.5);
+      cursor: default;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .topnav-link {
+        font-size: 12px;
+        padding: 4px 6px;
+        min-width: 24px;
+        height: 24px;
+      }
+      
+      .social-link {
+        font-size: 11px !important;
+        padding: 3px 4px !important;
+        min-width: 20px !important;
+        height: 20px !important;
+      }
+      
+      .topnav-separator {
+        height: 14px;
+        margin: 0 4px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .topnav-link {
+        font-size: 11px;
+        padding: 3px 4px;
+        min-width: 20px;
+        height: 20px;
+      }
+      
+      .social-link {
+        font-size: 10px !important;
+        padding: 2px 3px !important;
+        min-width: 18px !important;
+        height: 18px !important;
+      }
+      
+      .topnav-separator {
+        height: 12px;
+        margin: 0 2px;
+      }
+    }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

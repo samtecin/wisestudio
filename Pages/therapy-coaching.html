@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseStudio for Therapy & Coaching – Professional Practice Management Platform</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/wisestudio-logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-1" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); border-bottom: 1px solid rgba(255,255,255,0.1); min-height: 40px;">
+        <div class="container-fluid">
+            <!-- All content aligned to the right -->
+            <div class="ms-auto">
+                <div class="d-flex align-items-center gap-2">
+                    <!-- Contact Icons -->
+                    <a href="mailto:wisestudioin@outlook.com"
+                       class="topnav-link email-link"
+                       title="Send us an email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                    
+                    <a href="tel:+918939677189"
+                       class="topnav-link phone-link"
+                       title="Call us">
+                        <i class="bi bi-telephone"></i>
+                    </a>
+                    
+                    <!-- Engagement Links -->
+                    <a href="https://wa.me/918939677189?text=Hi%20WiseMount%2C%20I%20am%20reaching%20out%20from%20your%20website%20to%20learn%20more%20about%20your%20services."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="topnav-link whatsapp-link"
+                       title="Chat with us on WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    
+                    <!-- Separator -->
+                    <div class="topnav-separator"></div>
+                    
+                    <!-- Social Media Icons -->
+                    <a href="https://www.linkedin.com/company/wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link linkedin-link"
+                       aria-label="LinkedIn" 
+                       title="Follow us on LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    
+                    <a href="https://twitter.com/wisemounthq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link twitter-link"
+                       aria-label="Twitter" 
+                       title="Follow us on Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link facebook-link"
+                       aria-label="Facebook" 
+                       title="Like us on Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/@wmhq" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link youtube-link"
+                       aria-label="YouTube" 
+                       title="Subscribe to our YouTube channel">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/wmhq1" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link instagram-link"
+                       aria-label="Instagram" 
+                       title="Follow us on Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    
+                    <a href="https://www.pinterest.com/wmhq1" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="topnav-link social-link pinterest-link"
+                       aria-label="Pinterest" 
+                       title="Follow us on Pinterest">
+                        <i class="bi bi-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: linear-gradient(135deg, #b108b6 0%, #6610F2 100%) !important;">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/wisestudio-logo.png" alt="WiseStudio" height="40" class="me-2">
+                <span class="fw-bold">WiseStudio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#how-it-works">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4" href="../index.html#signup">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #6610F2 0%, #b108b6 100%);">
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-4 fw-bold text-white mb-4">WiseStudio for Therapy & Coaching</h1>
+                    <p class="lead text-white mb-5">Professional Practice Management Platform</p>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="bg-white rounded-4 p-4 shadow">
+                                <h3 class="text-primary mb-3">🧠 Transform Your Therapeutic Practice</h3>
+                                <p class="text-muted">From client sessions to practice growth—manage everything with professional excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Introduction -->
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold mb-4">How WiseStudio Empowers Therapists & Coaches</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="lead text-muted">WiseStudio is an all-in-one, smart management platform built especially for therapists, counselors, life coaches, and mental health professionals. Whether you provide individual therapy, group counseling, life coaching, or specialized therapeutic services, WiseStudio helps you manage everything from appointment scheduling to secure client records—so you can focus entirely on your clients' healing and growth.</p>
+                                <div class="bg-light rounded-4 p-4 mt-4">
+                                    <p class="mb-0 fw-medium">It functions like a professional digital assistant, securely managing your client sessions, treatment notes, payments, and administrative tasks, all with complete confidentiality and compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div class="mb-5">
+                        <h2 class="text-center mb-5">✅ What Can WiseStudio Do for Therapists & Coaches?</h2>
+                        
+                        <div class="row g-4">
+                            <!-- Feature 1 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-primary text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-calendar-check fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">1. Professional Session Scheduling</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Manage individual therapy sessions, group counseling, and specialized treatment programs with a professional calendar system</li>
+                                            <li class="mb-2">✓ Schedule multiple therapists and treatment rooms across one or multiple practice locations from one secure dashboard</li>
+                                            <li class="mb-0">✓ Send automatic appointment reminders to clients with HIPAA-compliant messaging</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-success text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-video fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">2. Secure Online & In-Person Sessions</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><strong>Teletherapy:</strong> Seamlessly integrate with secure platforms like Zoom Pro or specialized therapy platforms for confidential online sessions</li>
+                                            <li class="mb-0"><strong>In-Person Practice:</strong> Manage office visits, group therapy sessions, and workshops with proper client check-in and attendance tracking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-info text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-user-shield fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">3. Professional Practice Website (White Label)</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Establish your professional online presence with WiseStudio integrated into your practice website in under 30 minutes</li>
+                                            <li class="mb-2">✓ Complete white-label solution featuring your practice name, credentials, and branding—no WiseStudio visibility</li>
+                                            <li class="mb-0">✓ Clients can book appointments, access intake forms, and make payments through your professional portal</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-warning text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-file-medical-alt fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">4. Secure Client Records Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Maintain confidential client records including treatment history, session notes, assessment scores, and progress tracking</li>
+                                            <li class="mb-0">✓ Securely document therapy goals, treatment plans, and client outcomes with professional-grade data protection</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 5 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-secondary text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-user-md fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">5. Multi-Therapist Practice Management</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Assign specific specializations and client caseloads to different therapists and counselors</li>
+                                            <li class="mb-0">✓ Seamlessly manage associate therapists, interns, and administrative staff as your practice expands</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 6 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-dark text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-clipboard-list fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">6. Flexible Treatment Plans & Session Packages</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Create customized treatment packages (8-session programs, monthly therapy plans, intensive treatment packages)</li>
+                                            <li class="mb-0">✓ Automatically track treatment progress and send renewal notifications when packages near completion</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 7 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-danger text-white rounded-circle p-3 me-3">
+                                                <i class="fas fa-credit-card fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">7. Professional Payment Processing</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Accept secure payments through multiple methods including UPI, cards, and insurance copays</li>
+                                            <li class="mb-2">✓ All payments go directly to your practice account with no commission or transaction fees</li>
+                                            <li class="mb-0">✓ <strong>Complete financial control with 100% revenue retention</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 8 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-purple text-white rounded-circle p-3 me-3" style="background-color: #6f42c1;">
+                                                <i class="fas fa-handshake fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">8. Transparent Professional Model</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Simple subscription-based pricing with no hidden fees or revenue sharing</li>
+                                            <li class="mb-2">✓ Access all professional features regardless of practice size—from solo practitioners to group practices</li>
+                                            <li class="mb-0">✓ Designed for therapeutic professionals who value financial transparency</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 9 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-teal text-white rounded-circle p-3 me-3" style="background-color: #20c997;">
+                                                <i class="fas fa-building fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">9. Multi-Location Practice Support</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Manage multiple therapy locations or offer services across various specialties—all centrally controlled</li>
+                                            <li class="mb-0">✓ Track performance metrics, client outcomes, and revenue across each location or therapeutic specialty</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature 10 -->
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex align-items-center mb-3">
+                                            <div class="bg-orange text-white rounded-circle p-3 me-3" style="background-color: #fd7e14;">
+                                                <i class="fas fa-chart-bar fa-lg"></i>
+                                            </div>
+                                            <h4 class="mb-0">10. Clinical Analytics & Outcome Tracking</h4>
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2">✓ Access insights into client engagement, treatment effectiveness, session attendance patterns, and practice growth</li>
+                                            <li class="mb-0">✓ Use data-driven insights to improve treatment outcomes and optimize your therapeutic practice</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Use Case Section -->
+                    <div class="bg-light rounded-4 p-5 mb-5">
+                        <h2 class="text-center mb-4">💡 Real-World Use Case: WiseStudio for a Therapeutic Practice</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <p class="mb-3">Imagine you run a mental health practice offering individual therapy, couples counseling, and group therapy sessions.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">🧠 Clients book individual therapy sessions (both in-person and teletherapy) through your professional website</li>
+                                    <li class="mb-2">👥 You and two other licensed therapists specialize in different areas—anxiety treatment, couples therapy, and adolescent counseling</li>
+                                    <li class="mb-2">💻 New clients complete secure intake forms and schedule initial assessments online</li>
+                                    <li class="mb-2">📋 Clients purchase 8-session treatment packages or pay per session based on their insurance coverage</li>
+                                    <li class="mb-2">💳 All payments (insurance copays, private pay, sliding scale) are processed securely with no commission fees</li>
+                                    <li class="mb-2">📊 You manage all client records, treatment notes, and outcome measures within WiseStudio's secure system</li>
+                                    <li class="mb-2">📈 Analytics show group therapy has high retention rates, helping you expand those specialized services</li>
+                                </ul>
+                                <div class="text-center mt-4">
+                                    <p class="fw-bold text-primary">Everything—scheduling, client records, billing, and practice management—happens through one secure, HIPAA-compliant dashboard accessible anywhere.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Why Choose Section -->
+                    <div class="mb-5">
+                        <h2 class="text-center mb-5">🎯 Why Choose WiseStudio as a Therapeutic Professional?</h2>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-success text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-lock fa-2x"></i>
+                                    </div>
+                                    <h5>HIPAA-Compliant Security</h5>
+                                    <p>Professional-grade data protection and client confidentiality</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-primary text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-stethoscope fa-2x"></i>
+                                    </div>
+                                    <h5>Clinical Focus</h5>
+                                    <p>Designed specifically for mental health and therapeutic professionals</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-info text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-user-friends fa-2x"></i>
+                                    </div>
+                                    <h5>Client-Centered Care</h5>
+                                    <p>More time for therapy, less time on administrative tasks</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-warning text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-percent fa-2x"></i>
+                                    </div>
+                                    <h5>100% Revenue Retention</h5>
+                                    <p>No commission fees. Every payment goes directly to your practice</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-secondary text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-certificate fa-2x"></i>
+                                    </div>
+                                    <h5>Professional Credibility</h5>
+                                    <p>Enhance your practice's professional image and efficiency</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <div class="bg-danger text-white rounded-circle p-3 d-inline-block mb-3">
+                                        <i class="fas fa-phone-alt fa-2x"></i>
+                                    </div>
+                                    <h5>Professional Support</h5>
+                                    <p>Expert assistance from support team familiar with therapeutic practices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Who Can Use Section -->
+                    <div class="bg-primary text-white rounded-4 p-5 mb-5">
+                        <h2 class="text-center mb-4">🌟 Who Can Benefit?</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <ul class="list-unstyled text-center">
+                                    <li class="mb-3">🧠 Licensed therapists and mental health counselors</li>
+                                    <li class="mb-3">💼 Life coaches and executive coaches</li>
+                                    <li class="mb-3">👥 Marriage and family therapists</li>
+                                    <li class="mb-3">🏢 Group practice owners and mental health clinics</li>
+                                    <li class="mb-0">🎯 Specialized therapy providers (addiction, trauma, EMDR, etc.)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="text-center">
+                        <h2 class="mb-4">WiseStudio isn't just software—it's your professional practice partner</h2>
+                        <p class="lead mb-4">Empowering you to deliver exceptional therapeutic care, maintain professional standards, and grow your practice with confidence and security.</p>
+                        <a href="../index.html#signup" class="btn btn-primary btn-lg px-5">Enhance Your Practice Today</a>
+                        <p class="mt-3 text-muted">Ready to elevate your therapeutic practice? Choose your plan and let WiseStudio handle the administration while you focus on what matters most—your clients' healing and growth!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; padding: 60px 0 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold">
+                        <img src="../assets/images/wisestudio-logo.png" alt="WiseStudio" height="60" class="me-2">WiseStudio
+                    </h5>
+                    <p class="mb-3">All-in-one platform for managing classes, bookings, and payments across healthcare, fitness, education, and professional services worldwide.</p>
+                    <div class="social-links">
+                        <span class="social-link-placeholder" aria-label="Facebook"><i class="fab fa-facebook-f"></i></span>
+                        <span class="social-link-placeholder" aria-label="Twitter"><i class="fab fa-twitter"></i></span>
+                        <span class="social-link-placeholder" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></span>
+                        <span class="social-link-placeholder" aria-label="Instagram"><i class="fab fa-instagram"></i></span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <div class="contact-info">
+                        <p class="mb-2"><strong><a href="https://it.wisemount.in/" target="_blank" rel="noopener noreferrer" class="text-light text-decoration-none" style="border-bottom: 1px solid rgba(255,255,255,0.3); transition: border-bottom 0.3s ease;" onmouseover="this.style.borderBottom='1px solid white'" onmouseout="this.style.borderBottom='1px solid rgba(255,255,255,0.3)'">WiseMount Pvt Ltd</a></strong></p>
+                        <p class="mb-2">247/12-1 A, Railway Extension Road,<br>Tenkasi-627811, Tamil Nadu, India</p>
+                        <p class="mb-2"><i class="fas fa-envelope me-2"></i>wisestudioin@outlook.com</p>
+                        <p class="mb-0"><i class="fas fa-phone me-2"></i>+91 8939677189</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Healthcare & Wellness</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="doctors.html" class="text-light text-decoration-none">Doctors & Clinics</a></li>
+                        <li><a href="alternative-health.html" class="text-light text-decoration-none">Alternative Health</a></li>
+                        <li><a href="therapy-coaching.html" class="text-light text-decoration-none">Therapy & Coaching</a></li>
+                        <li><a href="wellness-coaches.html" class="text-light text-decoration-none">Wellness Coaches</a></li>
+                        <li><a href="fitness-trainers.html" class="text-light text-decoration-none">Fitness Trainers</a></li>
+                        <li><a href="beauty-spa.html" class="text-light text-decoration-none">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Education & Professional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="schools.html" class="text-light text-decoration-none">Schools</a></li>
+                        <li><a href="colleges.html" class="text-light text-decoration-none">Colleges</a></li>
+                        <li><a href="tuitions.html" class="text-light text-decoration-none">Tuitions</a></li>
+                        <li><a href="creative-arts.html" class="text-light text-decoration-none">Creative Arts</a></li>
+                        <li><a href="advocates.html" class="text-light text-decoration-none">Advocates</a></li>
+                        <li><a href="events.html" class="text-light text-decoration-none">Events & Workshops</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="text-center">
+                        <p class="mb-1">&copy; 2025 WiseStudio. All rights reserved.</p>
+                        <p class="mb-2">
+                            Powered by <strong>
+                                <a href="https://www.businesstechlabs.com/" target="_blank" style="color: #87CEEB; text-decoration: none;">BusinessTechLabs</a>
+                            </strong> Studio Management Platform
+                        </p>
+                        <div class="footer-links mt-3">
+                            <span class="text-muted me-3">Privacy Policy</span>
+                            <span class="text-muted me-3">Terms of Service</span>
+                            <span class="text-muted">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CSS Styles from index.html -->
+    <style>
+    /* Top Navigation Bar Styles */
+    .topnav-link {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      padding: 6px 8px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+    }
+
+    .topnav-link:hover {
+      transform: scale(1.1);
+      text-decoration: none;
+      color: white;
+    }
+
+    /* Contact Icons */
+    .email-link {
+      color: #FFC107 !important;
+    }
+
+    .email-link:hover {
+      background-color: rgba(255, 193, 7, 0.15);
+      color: #FFC107 !important;
+    }
+
+    .phone-link {
+      color: #17A2B8 !important;
+    }
+
+    .phone-link:hover {
+      background-color: rgba(23, 162, 184, 0.15);
+      color: #17A2B8 !important;
+    }
+
+    /* Engagement Links */
+    .whatsapp-link {
+      color: #25D366 !important;
+    }
+
+    .whatsapp-link:hover {
+      background-color: rgba(37, 211, 102, 0.15);
+      color: #25D366 !important;
+    }
+
+    /* Social Media Links */
+    .social-link {
+      font-size: 13px !important;
+      padding: 4px 6px !important;
+      border-radius: 3px !important;
+      min-width: 24px !important;
+      height: 24px !important;
+    }
+
+    .linkedin-link {
+      color: #0077B5 !important;
+    }
+
+    .linkedin-link:hover {
+      background-color: rgba(0, 119, 181, 0.15);
+      color: #0077B5 !important;
+    }
+
+    .twitter-link {
+      color: #1DA1F2 !important;
+    }
+
+    .twitter-link:hover {
+      background-color: rgba(29, 161, 242, 0.15);
+      color: #1DA1F2 !important;
+    }
+
+    .facebook-link {
+      color: #1877F2 !important;
+    }
+
+    .facebook-link:hover {
+      background-color: rgba(24, 119, 242, 0.15);
+      color: #1877F2 !important;
+    }
+
+    .youtube-link {
+      color: #FF0000 !important;
+    }
+
+    .youtube-link:hover {
+      background-color: rgba(255, 0, 0, 0.15);
+      color: #FF0000 !important;
+    }
+
+    .instagram-link {
+      color: #E4405F !important;
+    }
+
+    .instagram-link:hover {
+      background-color: rgba(228, 64, 95, 0.15);
+      color: #E4405F !important;
+    }
+
+    .pinterest-link {
+      color: #BD081C !important;
+    }
+
+    .pinterest-link:hover {
+      background-color: rgba(189, 8, 28, 0.15);
+      color: #BD081C !important;
+    }
+
+    /* Separator */
+    .topnav-separator {
+      width: 1px;
+      height: 18px;
+      background-color: rgba(255, 255, 255, 0.3);
+      margin: 0 8px;
+    }
+
+    /* Additional Navigation Styling for Better Visibility */
+    .navbar {
+      z-index: 1050;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .navbar-brand img {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .navbar-nav .nav-link {
+      color: rgba(255, 255, 255, 0.9) !important;
+      font-weight: 500;
+      padding: 0.75rem 1rem !important;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #fff !important;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 6px;
+    }
+
+    .navbar-toggler {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.25rem 0.5rem;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+    }
+
+    /* Footer social placeholders */
+    .footer .social-links .social-link-placeholder {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      color: rgba(255, 255, 255, 0.5);
+      cursor: default;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .topnav-link {
+        font-size: 12px;
+        padding: 4px 6px;
+        min-width: 24px;
+        height: 24px;
+      }
+      
+      .social-link {
+        font-size: 11px !important;
+        padding: 3px 4px !important;
+        min-width: 20px !important;
+        height: 20px !important;
+      }
+      
+      .topnav-separator {
+        height: 14px;
+        margin: 0 4px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .topnav-link {
+        font-size: 11px;
+        padding: 3px 4px;
+        min-width: 20px;
+        height: 20px;
+      }
+      
+      .social-link {
+        font-size: 10px !important;
+        padding: 2px 3px !important;
+        min-width: 18px !important;
+        height: 18px !important;
+      }
+      
+      .topnav-separator {
+        height: 12px;
+        margin: 0 2px;
+      }
+    }
+    </style>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
